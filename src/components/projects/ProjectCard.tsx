@@ -53,12 +53,20 @@ const ProjectCard = (props: ProjectCardProps) => {
 
   const element: JSX.Element = (
     <div className="flex w-full flex-col items-center justify-center gap-2 text-center">
-      <div className="mt-4 flex flex-col rounded-md bg-black p-2 text-start font-mono text-slate-400">
+      <div className="mt-4 flex w-full flex-col rounded-md bg-black p-2 text-start font-mono text-slate-400">
         <p>{'/**'}</p>
         {props.descriptions.map((description, index) => (
           <p key={index}>&nbsp;* {description}</p>
         ))}
         <p>&nbsp;*/</p>
+      </div>
+
+      <div className="flex w-max flex-row gap-2 self-start">
+        {props.tags.map((tag, index) => (
+          <Button key={index} color="gray" className="p-0" pill>
+            {tag}
+          </Button>
+        ))}
       </div>
 
       <div className="mt-4 flex w-max flex-row gap-4 self-end">
