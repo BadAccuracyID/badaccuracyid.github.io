@@ -16,7 +16,7 @@ export default function LBW1058() {
     'Optional backend service for automatic cloud server scaling based on player count.',
   ];
   const images = [lcControllerImage, dgenImage];
-  const link = '';
+  const link = 'https://www.luckynetwork.net/en';
   const github = '';
   const tags = ['Java', 'Redis', 'MySQL', 'JavaFX'];
   const prevLink = 'prev';

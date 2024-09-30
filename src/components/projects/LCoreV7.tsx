@@ -17,7 +17,7 @@ export default function LCoreV7() {
     'Despite being discontinued in 2023, many elements of LuckyCoreV7 remain active in 2024, supporting hundreds of concurrent players.',
   ];
   const images = [lcore1Image, lcore2Image, lcore3Image];
-  const link = '';
+  const link = 'https://www.luckynetwork.net/en';
   const github = '';
   const tags = ['Java', 'gRPC', 'MySQL'];
   const prevLink = 'lcorev5';

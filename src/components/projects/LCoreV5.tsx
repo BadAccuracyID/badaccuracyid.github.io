@@ -18,7 +18,7 @@ export default function LCoreV5() {
     'Player disguising feature, allowing players to change identity and rank without logging out — unique to Indonesian servers.',
   ];
   const images = [lcore1Image, lcore2Image, lcore3Image, lcore4Image];
-  const link = '';
+  const link = 'https://www.luckynetwork.net/en';
   const github = '';
   const tags = ['Java', 'Redis', 'MySQL', 'MongoDB'];
   const prevLink = 'lbw1058';
