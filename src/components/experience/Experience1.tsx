@@ -18,34 +18,34 @@ interface WorkProgramTimelineProps {
 export function Experience1() {
   const data: WorkProgramTimelineProps[] = [
     {
-      title: 'BINUS University - Teaching Assistant Development Officer',
+      title: 'BINUS University Teaching Assistant Development Officer',
       timeframe: 'January 2024 to Now',
       items: [
-        '- Responsible in the growth and development of BINUS University’s laboratory assistants by managing Test Progressing Assistant (TPA) and Research Interest Group (RIG).',
-        '- Successfully reformed BINUS University SLC’s Academic Department usage of Git and GitHub.',
-        '- Developer of NeoAcad, a web application project for officers of BINUS University SLC’s Academic Department that will be used to manage Academic operations in BINUS University SLC.',
+        'Responsible in the growth and development of BINUS University’s laboratory assistants by managing Test Progressing Assistant (TPA) and Research Interest Group (RIG).',
+        'Successfully reformed BINUS University SLC’s Academic Department usage of Git and GitHub.',
+        'Developer of NeoAcad, a web application project for officers of BINUS University SLC’s Academic Department that will be used to manage Academic operations in BINUS University SLC.',
       ],
       iconColor: 'cyan-600',
       titleColor: 'text-cyan-200',
     },
     {
-      title: 'BINUS University - Junior Laboratory Assistant',
+      title: 'BINUS University Junior Laboratory Assistant',
       timeframe: 'February 2023 to January 2024',
       items: [
-        '- Successfully taught more than 360 BINUS University students about various subjects, such as iOS app development, C++, Data Structures, Java Object Oriented Programming, Database Systems, etc.',
-        '- Successfully improved BINUS University’s Database System subject software usage guide for Apple Silicon MacBook users.',
-        '- Awarded as the best performing assistant candidate.',
+        'Successfully taught more than 360 BINUS University students about various subjects, such as iOS app development, C++, Data Structures, Java Object Oriented Programming, Database Systems, etc.',
+        'Successfully improved BINUS University’s Database System subject software usage guide for Apple Silicon MacBook users.',
+        'Awarded as the best performing assistant candidate.',
       ],
       iconColor: 'amber-600',
       titleColor: 'text-amber-200',
     },
     {
-      title: 'LuckyNetwork SEA - Cheif Technology Officer',
+      title: 'LuckyNetwork SEA Cheif Technology Officer',
       timeframe: 'January 2021 to Feburary 2023',
       items: [
-        '- Successfully lead LuckyNetwork’s technological development and development team, making LuckyNetwork Indonesia’s most technologically advanced Minecraft server at the time.',
-        '- Successfully designed LuckyNetwork’s microservice architecture for its core plugin and BedWars plugin.',
-        '- Played a key role in the development of LuckyNetwork’s core plugin that is responsible for cross-server player data synchronization and cross-server player communication.',
+        'Successfully lead LuckyNetwork’s technological development and development team, making LuckyNetwork Indonesia’s most technologically advanced Minecraft server at the time.',
+        'Successfully designed LuckyNetwork’s microservice architecture for its core plugin and BedWars plugin.',
+        'Played a key role in the development of LuckyNetwork’s core plugin that is responsible for cross-server player data synchronization and cross-server player communication.',
       ],
       iconColor: 'green-600',
       titleColor: 'text-emerald-200',
@@ -73,7 +73,7 @@ function GetTimeline({
 
           <Timeline.Content className="ml-1">
             <Timeline.Title className="cursor-pointer text-white duration-100 hover:text-slate-300">
-              Back - About Me
+              Back About Me
             </Timeline.Title>
           </Timeline.Content>
         </Timeline.Item>
@@ -124,7 +124,7 @@ function GetTimeline({
 
           <Timeline.Content className="ml-1">
             <Timeline.Title className="cursor-pointer text-white duration-100 hover:text-slate-300">
-              Next - Experience (2/2)
+              Next Experience (2/2)
             </Timeline.Title>
           </Timeline.Content>
         </Timeline.Item>

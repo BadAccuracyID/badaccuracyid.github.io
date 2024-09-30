@@ -18,32 +18,32 @@ interface WorkProgramTimelineProps {
 export function Experience2() {
   const data: WorkProgramTimelineProps[] = [
     {
-      title: 'LuckyNetwork SEA - Leader of Lucky Development Department',
+      title: 'LuckyNetwork SEA Leader of Lucky Development Department',
       timeframe: 'November 2019 to January 2021',
       items: [
-        '- Successfully lead LuckyNetwork’s development team, consisting of plugin developers, server setup specialists, and builders.',
-        '- Successfully developed LuckyNetwork’s LuckyEssentialsJava, a lightweight but feature packed Minecraft plugin to enhance user experiences.',
-        '- Played a key role in the development of LuckyNetwork’s LuckyBedwars1058 plugin, which pushed LuckyNetwork’s player count to 1800+ concurrent players, making it the largest server in Southeast Asia.',
+        'Successfully lead LuckyNetwork’s development team, consisting of plugin developers, server setup specialists, and builders.',
+        'Successfully developed LuckyNetwork’s LuckyEssentialsJava, a lightweight but feature packed Minecraft plugin to enhance user experiences.',
+        'Played a key role in the development of LuckyNetwork’s LuckyBedwars1058 plugin, which pushed LuckyNetwork’s player count to 1800+ concurrent players, making it the largest server in Southeast Asia.',
       ],
       iconColor: 'blue-600',
       titleColor: 'text-blue-200',
     },
     {
-      title: 'LuckyNetwork SEA - Administrator',
+      title: 'LuckyNetwork SEA Administrator',
       timeframe: 'January 2019 to November 2019',
       items: [
-        '- Successfully enforced LuckyNetwork’s rule and maintained LuckyNetwork’s community.',
-        '- Successfully improved and contributed in LuckyNetwork’s KitBattle server, which gets around 60 concurrent players.',
-        '- Successfully transformed a skript gamemode called ThePit into a Minecraft plugin written in Java.',
+        'Successfully enforced LuckyNetwork’s rule and maintained LuckyNetwork’s community.',
+        'Successfully improved and contributed in LuckyNetwork’s KitBattle server, which gets around 60 concurrent players.',
+        'Successfully transformed a skript gamemode called ThePit into a Minecraft plugin written in Java.',
       ],
       iconColor: 'red-600',
       titleColor: 'text-red-200',
     },
     {
-      title: 'LuckyNetwork SEA - Moderator',
+      title: 'LuckyNetwork SEA Moderator',
       timeframe: 'November 2018 to January 2019',
       items: [
-        '- Minecraft Server Moderator that is responsible in maintaining a safe and fun environment for the players. Enforce server rules, issue warnings, mutes, kicks, and bans when necessary.',
+        'Minecraft Server Moderator that is responsible in maintaining a safe and fun environment for the players. Enforce server rules, issue warnings, mutes, kicks, and bans when necessary.',
       ],
       iconColor: 'yellow-600',
       titleColor: 'text-yellow-100',
@@ -77,7 +77,7 @@ function GetTimeline({
 
           <Timeline.Content className="ml-1">
             <Timeline.Title className="cursor-pointer text-white duration-100 hover:text-slate-300">
-              Back - Experience (1/2)
+              Back Experience (1/2)
             </Timeline.Title>
           </Timeline.Content>
         </Timeline.Item>
@@ -122,7 +122,7 @@ function GetTimeline({
 
           <Timeline.Content className="ml-1">
             <Timeline.Title className="cursor-pointer text-white duration-100 hover:text-slate-300">
-              Next - Projects
+              Next Projects
             </Timeline.Title>
           </Timeline.Content>
         </Timeline.Item>
