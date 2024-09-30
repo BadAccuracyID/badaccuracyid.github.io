@@ -8,6 +8,7 @@ export default function LBW1058() {
   const title = 'LuckyBedWars1058';
   const shortDescription =
     "Advanced BedWars plugin for LuckyNetwork's cloud based infrastructure and high player count.";
+  const year = '2022';
   const descriptions: string[] = [
     'High-performance BedWars plugin.',
     'Supports up to 200 players per server instance with under 4GB RAM and a single-core processor.',
@@ -25,6 +26,7 @@ export default function LBW1058() {
     <ProjectCard
       title={title}
       shortDescription={shortDescription}
+      year={year}
       descriptions={descriptions}
       images={images}
       link={link}

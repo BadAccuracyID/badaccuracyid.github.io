@@ -9,6 +9,7 @@ export default function LEss() {
   const title = 'LuckyEssentialsJava';
   const shortDescription =
     'Lightweight yet feature-rich plugin designed to improve the gameplay experience and moderation experience for Minecraft servers.';
+  const year = '2023';
   const descriptions: string[] = [
     'Lightweight plugin designed to simplify gameplay with features like toggling flight mode and easy server management.',
     'Supports server whitelisting using player usernames and includes command aliases with in-game usage documentation.',
@@ -28,6 +29,7 @@ export default function LEss() {
     <ProjectCard
       title={title}
       shortDescription={shortDescription}
+      year={year}
       descriptions={descriptions}
       images={images}
       link={link}

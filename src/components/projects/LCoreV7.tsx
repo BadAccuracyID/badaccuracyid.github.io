@@ -9,6 +9,7 @@ export default function LCoreV7() {
   const title = 'LuckyCoreV7';
   const shortDescription =
     'Minecraft server core plugin that utilizes the micro-service architecture and gRPC to be as performant and scaleable as possible.';
+  const year = '2023';
   const descriptions: string[] = [
     'Developed using micro-service architecture with gRPC for low-latency communication and automatic load balancing.',
     'Built on technologies from Atreus, initially designed as a simplified version of LuckyCoreV5.',
@@ -26,6 +27,7 @@ export default function LCoreV7() {
     <ProjectCard
       title={title}
       shortDescription={shortDescription}
+      year={year}
       descriptions={descriptions}
       images={images}
       link={link}

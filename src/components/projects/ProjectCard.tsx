@@ -9,6 +9,7 @@ import ProjectModal from '@/components/projects/ProejctModal';
 interface ProjectCardProps {
   title: string;
   shortDescription: string;
+  year: string;
   descriptions: string[];
   images: string[];
   link?: string;
@@ -144,6 +145,9 @@ const ProjectCard = (props: ProjectCardProps) => {
           </div>
           <div className="text-center text-gray-500">
             {props.shortDescription}
+          </div>
+          <div className="text-center text-sm text-gray-700">
+            ({props.year})
           </div>
 
           <div

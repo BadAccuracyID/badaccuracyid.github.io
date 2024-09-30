@@ -10,6 +10,7 @@ export default function LCoreV5() {
   const title = 'LyraCore (LuckyCoreV5)';
   const shortDescription =
     'Minecraft server core plugin to handle player rank synchronization, cross-server messaging, cross server player reporting, staff tracking/listing, staff chats, player disguising system, and more.';
+  const year = '2021';
   const descriptions: string[] = [
     'High-performance and feature rich server core plugin.',
     'Three modules: Minecraft server instance, proxy instance, and high-privileged module for rank/permission changes.',
@@ -27,6 +28,7 @@ export default function LCoreV5() {
     <ProjectCard
       title={title}
       shortDescription={shortDescription}
+      year={year}
       descriptions={descriptions}
       images={images}
       link={link}
