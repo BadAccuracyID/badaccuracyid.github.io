@@ -15,6 +15,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atelierHeathDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import Typed from 'typed.js';
 
+import Experiences from '@/components/experience/experiences';
 import Projects from '@/components/projects/projects';
 
 import Navbar from '../components/Navbar.tsx';
@@ -66,9 +67,9 @@ export default function Home() {
       <div className="vertical-timeline" />
       <Link
         to="start"
-        smooth={true}
-        spy={true}
-        hashSpy={true}
+        smooth
+        spy
+        hashSpy
         duration={500}
         className="vertical-timeline-end flex flex-row items-center gap-2"
       >
@@ -127,9 +128,9 @@ export default function Home() {
           {/* Arrow down to scroll */}
           <Link
             to="aboutme"
-            smooth={true}
-            spy={true}
-            hashSpy={true}
+            smooth
+            spy
+            hashSpy
             duration={500}
             offset={-50}
             className="absolute bottom-10 left-1/2 cursor-pointer"
@@ -143,7 +144,7 @@ export default function Home() {
           name="aboutme"
           className="flex h-screen flex-col justify-start"
         >
-          <Fade fraction={0.15} cascade={true}>
+          <Fade fraction={0.15} cascade>
             <div className="left-pad">
               <SyntaxHighlighter language="java" style={atelierHeathDark}>
                 {codeString}
@@ -151,10 +152,10 @@ export default function Home() {
             </div>
 
             <Link
-              to="projects"
-              smooth={true}
-              spy={true}
-              hashSpy={true}
+              to="experiences"
+              smooth
+              spy
+              hashSpy
               duration={500}
               offset={-50}
               className="left-pad-reverse flex cursor-pointer flex-row items-center bg-red-800 md:justify-end"
@@ -167,64 +168,29 @@ export default function Home() {
           </Fade>
         </Element>
 
-        {/* <Element
-          id={'workplan'}
-          name={'workplan'}
-          className={'left-pad mt-10 flex min-h-screen flex-col justify-center'}
+        <Element
+          id="experiences"
+          name="experiences"
+          className="left-pad mt-10 flex min-h-screen flex-col justify-center"
         >
           <div className="flex flex-row gap-3 pl-5">
-            <div className="text-xl text-gray-600">fun workPlan() {'{'}</div>
+            <div className="text-xl text-gray-600">
+              fun workExperience() {'{'}
+            </div>
           </div>
 
-          <Fade fraction={0.4} cascade={true}>
-            <div
-              id="semesterWorkplanContainer"
-              className="scrollbar-hide mt-8 flex flex-row gap-48 overflow-scroll pl-16 pr-64 pt-4"
-            >
-              <Element
-                id={'semester1'}
-                name={'semester1'}
-                className={
-                  'flex w-full flex-none snap-center flex-row items-start justify-start'
-                }
-              >
-                <Fade fraction={0.4} cascade={true}>
-                  <Semester1Timeline />
-                </Fade>
-              </Element>
-              <Element
-                id={'semester2'}
-                name={'semester2'}
-                className={
-                  'flex w-full flex-none snap-center flex-row items-center justify-start'
-                }
-              >
-                <Fade fraction={0.4} cascade={true}>
-                  <Semester2Timeline />
-                </Fade>
-              </Element>
-              <Element
-                id={'semesterend'}
-                name={'semesterend'}
-                className={
-                  'flex w-full flex-none snap-center flex-row items-center justify-start'
-                }
-              >
-                <Fade fraction={0.4} cascade={true}>
-                  <SemesterEndTimeline />
-                </Fade>
-              </Element>
-            </div>
+          <Fade fraction={0.4} cascade>
+            <Experiences />
           </Fade>
 
           <div className="flex flex-row gap-3 pl-5">
             <div className="text-xl text-gray-600">{'}'}</div>
           </div>
-        </Element> */}
+        </Element>
 
         <Element
-          id={'projects'}
-          name={'projects'}
+          id="projects"
+          name="projects"
           className={'left-pad mt-10 flex min-h-screen flex-col justify-center'}
         >
           <div className="flex flex-row gap-3 pl-5">
@@ -249,7 +215,7 @@ export default function Home() {
             <div className="text-xl text-gray-600">fun contacts() {'{'}</div>
           </div>
 
-          <Fade fraction={0.5} cascade={true}>
+          <Fade fraction={0.5} cascade>
             <div
               className={
                 'scrollbar-hide flex flex-row gap-12 overflow-scroll px-10 py-4'

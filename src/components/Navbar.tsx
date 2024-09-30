@@ -47,12 +47,12 @@ export default function Navbar() {
           item={'Pros and Cons'}
           active={isActive('Pros and Cons')}
           setActiveItem={setActiveItem}
-        />
+        />*/}
         <NavBarItem
-          item={'Work Plan'}
-          active={isActive('Work Plan')}
+          item="Experiences"
+          active={isActive('Experiences')}
           setActiveItem={setActiveItem}
-        /> */}
+        />
         <NavBarItem
           item="Projects"
           active={isActive('Projects')}
