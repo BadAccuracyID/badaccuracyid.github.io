@@ -150,38 +150,22 @@ const ProjectCard = (props: ProjectCardProps) => {
             ({props.year})
           </div>
 
-          <div
-            className={'mt-4 flex flex-row items-center justify-center gap-2'}
-          >
+          <div className="mt-4 flex flex-row items-center justify-center gap-2">
             <Link
-              to={props.prevLink}
-              containerId="projectsContainer"
+              to={props.prevLink == 'prev' ? 'aboutme' : props.prevLink}
+              containerId={props.prevLink == 'prev' ? '' : 'projectsContainer'}
               smooth={true}
-              horizontal={true}
+              horizontal={props.prevLink == 'prev' ? false : true}
             >
-              <Button
-                className={
-                  'w-fit self-center bg-purple-600 font-semibold duration-100 hover:bg-purple-700'
-                }
-                gradientMonochrome="purple"
-              >
-                Previous
-              </Button>
+              <Button gradientMonochrome="purple">Previous</Button>
             </Link>
             <Link
-              to={props.nextLink}
-              containerId="projectsContainer"
+              to={props.nextLink == 'next' ? 'contacts' : props.nextLink}
+              containerId={props.nextLink == 'next' ? '' : 'projectsContainer'}
               smooth={true}
-              horizontal={true}
+              horizontal={props.nextLink == 'next' ? false : true}
             >
-              <Button
-                className={
-                  'w-fit self-center bg-purple-600 font-semibold duration-100 hover:bg-purple-700'
-                }
-                gradientMonochrome="success"
-              >
-                Next
-              </Button>
+              <Button gradientMonochrome="success">Next</Button>
             </Link>
           </div>
         </div>

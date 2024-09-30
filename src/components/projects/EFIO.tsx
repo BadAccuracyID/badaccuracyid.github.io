@@ -24,7 +24,7 @@ export default function EFIO() {
   const github = '';
   const tags = ['Kotlin', 'Firebase', 'Android 33', 'REST'];
   const prevLink = 'less';
-  const nextLink = 'efio';
+  const nextLink = 'next';
 
   return (
     <ProjectCard

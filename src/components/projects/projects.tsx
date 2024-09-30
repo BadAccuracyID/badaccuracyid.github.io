@@ -10,23 +10,21 @@ const Projects = () => {
   return (
     <div
       id="projectsContainer"
-      className={
-        'scrollbar-hide mx-16 my-4 flex flex-row gap-48 overflow-scroll'
-      }
+      className="scrollbar-hide mx-16 my-4 flex flex-row gap-48 overflow-scroll"
     >
-      <Element name={'lbw1058'} className={'w-full flex-none snap-center'}>
+      <Element name="lbw1058" className="w-full flex-none snap-center">
         <LBW1058 />
       </Element>
-      <Element name={'lcorev5'} className={'w-full flex-none snap-center'}>
+      <Element name="lcorev5" className="w-full flex-none snap-center">
         <LCoreV5 />
       </Element>
-      <Element name={'lcorev7'} className={'w-full flex-none snap-center'}>
+      <Element name="lcorev7" className="w-full flex-none snap-center">
         <LCoreV7 />
       </Element>
-      <Element name={'less'} className={'w-full flex-none snap-center'}>
+      <Element name="less" className="w-full flex-none snap-center">
         <LEss />
       </Element>
-      <Element name={'efio'} className={'w-full flex-none snap-center'}>
+      <Element name="efio" className="w-full flex-none snap-center">
         <EFIO />
       </Element>
     </div>

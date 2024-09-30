@@ -19,7 +19,7 @@ export default function LBW1058() {
   const link = '';
   const github = '';
   const tags = ['Java', 'Redis', 'MySQL', 'JavaFX'];
-  const prevLink = 'lbw1058';
+  const prevLink = 'prev';
   const nextLink = 'lcorev5';
 
   return (
