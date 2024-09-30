@@ -70,7 +70,6 @@ export default function Home() {
         spy={true}
         hashSpy={true}
         duration={500}
-        offset={-50}
         className="vertical-timeline-end flex flex-row items-center gap-2"
       >
         <TbCircleDot
