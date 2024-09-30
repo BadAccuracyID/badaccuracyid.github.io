@@ -8,13 +8,13 @@ const Experiences = () => {
   return (
     <div
       id="experienceContainer"
-      className="scrollbar-hide mt-8 flex flex-row gap-48 overflow-scroll pl-16 pr-4 pt-4 md:pr-64"
+      className="scrollbar-hide mt-8 flex flex-row gap-16 overflow-scroll pl-16 pr-4 pt-4 md:gap-48 md:pr-64"
     >
       <Element
         name="experience1"
         className="flex w-full flex-none snap-center flex-row items-start justify-start"
       >
-        <Fade fraction={0.4} cascade={true}>
+        <Fade fraction={0.3} cascade>
           <Experience1 />
         </Fade>
       </Element>
@@ -23,7 +23,7 @@ const Experiences = () => {
         name="experience2"
         className="flex w-full flex-none snap-center flex-row items-center justify-start"
       >
-        <Fade fraction={0.4} cascade={true}>
+        <Fade fraction={0.3} cascade>
           <Experience2 />
         </Fade>
       </Element>
