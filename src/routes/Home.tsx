@@ -64,15 +64,22 @@ export default function Home() {
       <Navbar />
 
       <div className="vertical-timeline" />
-      <div className="vertical-timeline-end flex flex-row items-center gap-2">
+      <Link
+        to="start"
+        smooth={true}
+        spy={true}
+        hashSpy={true}
+        duration={500}
+        offset={-50}
+        className="vertical-timeline-end flex flex-row items-center gap-2"
+      >
         <TbCircleDot
           className={'vertical-timeline-end-dot size-6 bg-purple-700'}
         />
-
         <Button gradientMonochrome="failure" className="px-4" pill>
-          exit(0)
+          jmp start
         </Button>
-      </div>
+      </Link>
 
       <div>
         <Element
@@ -120,7 +127,7 @@ export default function Home() {
 
           {/* Arrow down to scroll */}
           <Link
-            to={'aboutme'}
+            to="aboutme"
             smooth={true}
             spy={true}
             hashSpy={true}

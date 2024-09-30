@@ -12,7 +12,7 @@ export default function Navbar() {
     <div className="navbar-blur fixed z-50 hidden w-full flex-row flex-wrap items-center justify-between px-3 py-1 md:flex">
       {/* Logo or Image */}
       <Link
-        to={'start'}
+        to="start"
         spy={true}
         smooth={true}
         offset={-50}
