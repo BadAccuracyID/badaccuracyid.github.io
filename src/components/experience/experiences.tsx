@@ -8,7 +8,7 @@ const Experiences = () => {
   return (
     <div
       id="experienceContainer"
-      className="scrollbar-hide mt-8 flex flex-row gap-48 overflow-scroll pl-16 pr-64 pt-4"
+      className="scrollbar-hide mt-8 flex flex-row gap-48 overflow-scroll pl-16 pr-4 pt-4 md:pr-64"
     >
       <Element
         name="experience1"
