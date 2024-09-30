@@ -75,40 +75,47 @@ export default function Home() {
       </div>
 
       <div>
-        {/* This is the "Hello I'm ..." */}
         <Element
-          id={'start'}
-          name={'start'}
-          className={'left-pad relative flex h-screen flex-col justify-center'}
+          id="start"
+          name="start"
+          className="left-pad relative flex h-screen flex-col justify-center"
         >
-          <div className="flex flex-row gap-3 pl-5">
-            <div className="text-xl text-gray-600">fun start() {'{'}</div>
-          </div>
-
-          <div className="flex flex-row gap-3 pl-10">
-            <div className="text-2xl text-gray-400">
-              Hello,&nbsp;
-              <span className={'text-red-500'}>World</span>!
+          <div className="flex flex-col pl-5">
+            <div className="flex flex-row gap-3">
+              <div className="text-xl text-gray-600">fun start() {'{'}</div>
             </div>
-          </div>
-          <div className="flex flex-row gap-3 pl-10">
-            <span className="text-6xl font-bold text-white">My name is</span>
-            <span className="text-6xl font-bold text-purple-800">
-              Efran Nathanael
-            </span>
-          </div>
-          <div className="mt-4 flex flex-row gap-3 pl-10">
-            <div className="typing-animation-container">
-              <span className="text-2xl text-white">I&apos;m a </span>
-              <span
-                ref={typedRef}
-                className="typing-animation text-2xl text-white"
-              />
-            </div>
-          </div>
 
-          <div className="flex flex-row gap-3 pl-5">
-            <div className="text-xl text-gray-600">{'}'}</div>
+            <div className="flex flex-col pl-5">
+              <div className="flex flex-row gap-3">
+                <div className="text-2xl text-gray-400">
+                  Hello,&nbsp;
+                  <span className="text-red-500">World</span>!
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row md:gap-3">
+                <span className="text-4xl font-bold text-white md:text-6xl">
+                  My name is
+                </span>
+                <span className="text-5xl font-bold text-purple-800 md:text-6xl">
+                  Efran Nathanael
+                </span>
+              </div>
+
+              <div className="mt-2 flex flex-row gap-3 md:mt-4">
+                <div className="typing-animation-container">
+                  <span className="text-2xl text-white">I&apos;m a </span>
+                  <span
+                    ref={typedRef}
+                    className="typing-animation text-2xl text-white"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-row gap-3">
+              <div className="text-xl text-gray-600">{'}'}</div>
+            </div>
           </div>
 
           {/* Arrow down to scroll */}

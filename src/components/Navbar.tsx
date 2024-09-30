@@ -9,7 +9,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="navbar-blur fixed z-50 flex w-full flex-row flex-wrap items-center justify-between px-3 py-1">
+    <div className="navbar-blur fixed z-50 hidden w-full flex-row flex-wrap items-center justify-between px-3 py-1 md:flex">
       {/* Logo or Image */}
       <Link
         to={'start'}
