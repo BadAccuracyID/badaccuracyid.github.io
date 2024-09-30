@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { type DeepPartial, Timeline } from 'flowbite-react';
 import type { FlowbiteTimelinePointTheme } from 'flowbite-react/lib/esm/components/Timeline/TimelinePoint';
-import { AiFillStar } from 'react-icons/ai';
+import { FaArrowLeft, FaCode } from 'react-icons/fa';
 import { HiCalendar } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 
@@ -68,7 +68,7 @@ function GetTimeline({
       >
         <Timeline.Item className="mb-8">
           <Timeline.Point
-            icon={HiCalendar}
+            icon={FaArrowLeft}
             theme={getTimelineTheme({
               iconColor: 'purple-600',
             })}
@@ -113,7 +113,7 @@ function GetTimeline({
       <Link to="projects" horizontal={false} smooth={true} offset={-50}>
         <Timeline.Item className="mb-8">
           <Timeline.Point
-            icon={AiFillStar}
+            icon={FaCode}
             theme={getTimelineTheme({
               iconColor: 'purple-600',
             })}
