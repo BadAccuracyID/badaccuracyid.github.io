@@ -11,10 +11,11 @@ export default function EFIO() {
   const shortDescription =
     'Android application used by BINUS University’s SLC laboratory assistants to check laboratory room transactions, such as teaching schedule and borrowing schedule, and to log room borrowing.';
   const descriptions: string[] = [
-    'EFIO was developed as a TPA project for SLC’s 23-1 generation to simplify room transaction checking and logging.',
-    'It has two modes: user mode for laboratory assistants to view room transactions and generate QR codes for borrowing requests, and admin mode for administrators to scan these codes and manage requests.',
-    'EFIO retrieves data from SLC’s messy API using REST, with challenges around inconsistent data and limited documentation.',
-    'To ensure security, EFIO uses biometric authentication when supported, and it is designed for high performance by caching necessary data for efficient and lightweight data loading.',
+    'A room transaction checking system for SLC’s 23-1 generation project.',
+    'Two modes: user mode for generating QR codes for room requests and admin mode for scanning and approving/declining requests.',
+    'Handles API data from SLC’s API with REST.',
+    'Uses biometric authentication for enhanced security and convinience.',
+    'Employs efficient in-memory caching for high performance.',
   ];
   const images = [image1, image2, image3, image4];
   const link =

@@ -13,8 +13,8 @@ export default function LCoreV5() {
   const descriptions: string[] = [
     'High-performance and feature rich server core plugin.',
     'Three modules: Minecraft server instance, proxy instance, and high-privileged module for rank/permission changes.',
-    'Implemented 2FA and robust rank synchronization across server instances, ensuring no data loss and instant rank updates.',
-    'Player disguising feature, allowing players (especially YouTubers) to change identity and rank without logging out—unique to Indonesian servers.',
+    '2FA and robust in-game rank synchronization across server instances, ensuring instant rank updates.',
+    'Player disguising feature, allowing players to change identity and rank without logging out — unique to Indonesian servers.',
   ];
   const images = [lcore1Image, lcore2Image, lcore3Image, lcore4Image];
   const link = '';

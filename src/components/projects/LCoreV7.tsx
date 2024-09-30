@@ -10,10 +10,10 @@ export default function LCoreV7() {
   const shortDescription =
     'Minecraft server core plugin that utilizes the micro-service architecture and gRPC to be as performant and scaleable as possible.';
   const descriptions: string[] = [
-    'Due to LuckyNetwork’s growth, a micro-service architecture plan was created for a new server core, initially called Atreus, aimed at simplifying LuckyCoreV5 while focusing on rank synchronization.',
-    'During Atreus’ development, it was determined that a new version of LuckyCoreV5 was needed to handle increased player counts and technological advancements, leading to the creation of LuckyCoreV7.',
-    'The hardest challenge in designing LuckyCoreV7 was implementing the micro-service architecture, with gRPC chosen for its low latency and automatic load balancing, ensuring high reliability and performance.',
-    'In 2023, LuckyCoreV7 was discontinued after my resignation, but as of 2024, many of its architecture, technologies, and services remain operational, supporting hundreds of concurrent players on LuckyNetwork.',
+    'Developed using micro-service architecture with gRPC for low-latency communication and automatic load balancing.',
+    'Built on technologies from Atreus, initially designed as a simplified version of LuckyCoreV5.',
+    'Ensured reliability and performance to support LuckyNetwork’s growing player base.',
+    'Despite being discontinued in 2023, many elements of LuckyCoreV7 remain active in 2024, supporting hundreds of concurrent players.',
   ];
   const images = [lcore1Image, lcore2Image, lcore3Image];
   const link = '';
