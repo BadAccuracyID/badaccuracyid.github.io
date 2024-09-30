@@ -11,11 +11,18 @@ data class Efran_Nathanael(
 		);
 	}
 
-	fun skills(): List<String> {
+	fun programmingSkills(): List<String> {
 		return arrayOf(
-			"Java", "Kotlin", "C++", "Bash", "Python", "PHP",
+			"Java", "Kotlin", "C++", "Python", "PHP", "Go", "C#",
 			"HTML/CSS/JS", "Typescript", "Laravel", "PL/SQL",
 			"MySQL", "SQLite", "PostgreSQL", "MongoDB", "Redis", "gRPC", "GraphQL", "REST",
+		);
+	}
+
+	fun softSkills(): List<String> {
+		return arrayOf(
+			"Public Speaking", "Event Management", "Team Management", 
+			"Time Management", "Problem Solving", "Critical Thinking",
 		);
 	}
 
