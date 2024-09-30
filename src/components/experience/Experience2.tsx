@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { type DeepPartial, Timeline } from 'flowbite-react';
-import type { FlowbiteTimelinePointTheme } from 'flowbite-react/lib/esm/components/Timeline/TimelinePoint';
+import type { FlowbiteTimelinePointTheme } from 'flowbite-react';
+import { Timeline } from 'flowbite-react';
+import type { DeepPartial } from 'node_modules/flowbite-react/dist/types/types';
 import { FaArrowLeft, FaCode } from 'react-icons/fa';
 import { HiCalendar } from 'react-icons/hi';
 import { Link } from 'react-scroll';

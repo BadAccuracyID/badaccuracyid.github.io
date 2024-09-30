@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { type DeepPartial, Timeline } from 'flowbite-react';
-import type { FlowbiteTimelinePointTheme } from 'flowbite-react/lib/esm/components/Timeline/TimelinePoint';
+import type { FlowbiteTimelinePointTheme } from 'flowbite-react';
+import { List, Timeline } from 'flowbite-react';
+import type { DeepPartial } from 'node_modules/flowbite-react/dist/types/types';
 import { FaArrowRight, FaUser } from 'react-icons/fa';
 import { HiCalendar } from 'react-icons/hi';
 import { Link } from 'react-scroll';
@@ -95,11 +96,11 @@ function GetTimeline({
                 {timelineProp.timeframe}
               </Timeline.Time>
               <Timeline.Body className="mt-2">
-                <ol className="flex flex-col gap-1">
+                <List className="flex flex-col gap-1">
                   {timelineProp.items.map((item, index) => {
-                    return <li key={index}>{item}</li>;
+                    return <List.Item key={index}>{item}</List.Item>;
                   })}
-                </ol>
+                </List>
               </Timeline.Body>
             </Timeline.Content>
           </Timeline.Item>
