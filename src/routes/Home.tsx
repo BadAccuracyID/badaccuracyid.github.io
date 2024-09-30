@@ -133,9 +133,9 @@ export default function Home() {
         </Element>
 
         <Element
-          id={'aboutme'}
-          name={'aboutme'}
-          className={'flex h-screen flex-col justify-start'}
+          id="aboutme"
+          name="aboutme"
+          className="flex h-screen flex-col justify-start"
         >
           <Fade fraction={0.15} cascade={true}>
             <div className="left-pad">
@@ -144,83 +144,22 @@ export default function Home() {
               </SyntaxHighlighter>
             </div>
 
-            {/* <Link
-              to={'prosandcons'}
-              smooth={true}
-              spy={true}
-              hashSpy={true}
-              duration={500}
-              offset={-50}
-              className="left-pad-reverse flex cursor-pointer flex-row items-center justify-end bg-red-800"
-            >
-              <div className="mr-5 font-semibold text-gray-400">
-                {'// Break Point'}
-              </div>
-
-              <FaDotCircle className="size-8 self-end py-0.5 font-bold text-red-500" />
-            </Link> */}
             <Link
-              to={'projects'}
+              to="projects"
               smooth={true}
               spy={true}
               hashSpy={true}
               duration={500}
               offset={-50}
-              className="left-pad-reverse flex cursor-pointer flex-row items-center justify-end bg-red-800"
+              className="left-pad-reverse flex cursor-pointer flex-row items-center bg-red-800 md:justify-end"
             >
-              <div className="mr-5 font-semibold text-gray-400">
+              <span className="font-semibold text-gray-400 md:mr-4">
                 {'// Break Point'}
-              </div>
-
-              <FaDotCircle className="size-8 self-end py-0.5 font-bold text-red-500" />
+              </span>
+              <FaDotCircle className="hidden size-8 self-start py-0.5 font-bold text-red-500 md:flex md:self-end" />
             </Link>
           </Fade>
         </Element>
-
-        {/* <Element
-          id={'prosandcons'}
-          name={'prosandcons'}
-          className={'left-pad mt-10 flex min-h-screen flex-col justify-center'}
-        >
-          <div className="flex flex-row gap-3 pl-5">
-            <div className="text-xl text-gray-600">class prosAndCons {'{'}</div>
-          </div>
-
-          <Fade fraction={0.4} cascade={true}>
-            <div className="flex flex-col gap-5">
-              <div className={'pl-5'}>
-                <ProsCard />
-              </div>
-              <div className={'pl-5'}>
-                <ConsCard />
-              </div>
-            </div>
-
-            <Link
-              to={'workplan'}
-              smooth={true}
-              spy={true}
-              hashSpy={true}
-              duration={500}
-              offset={-50}
-              className="flex flex-col gap-5 pt-5"
-            >
-              <div className={'pl-5'}>
-                <div
-                  className={`z-0 flex cursor-pointer flex-col justify-between rounded-lg p-4 text-amber-300 duration-200 hover:text-amber-100`}
-                >
-                  <div className={` text-start text-xl font-semibold`}>
-                    {`abstract fun goToWorkPlan()`}
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </Fade>
-
-          <div className="flex flex-row gap-3 pl-5">
-            <div className="text-xl text-gray-600">{'}'}</div>
-          </div>
-        </Element> */}
 
         {/* <Element
           id={'workplan'}
