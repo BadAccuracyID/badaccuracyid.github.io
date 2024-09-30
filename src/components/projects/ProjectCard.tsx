@@ -53,7 +53,7 @@ const ProjectCard = (props: ProjectCardProps) => {
   }
 
   const element: JSX.Element = (
-    <div className="flex w-full flex-col items-center justify-center gap-2 text-center">
+    <div className="flex w-full flex-col items-center justify-center gap-4 text-center">
       <div className="mt-4 flex w-full flex-col rounded-md bg-black p-2 text-start font-mono text-slate-400">
         <p>{'/**'}</p>
         {props.descriptions.map((description, index) => (

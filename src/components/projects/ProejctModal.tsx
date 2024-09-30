@@ -1,4 +1,4 @@
-import { Modal } from 'flowbite-react';
+import { Button, Modal } from 'flowbite-react';
 import type { ReactNode } from 'react';
 
 interface ProjectModalProps {
@@ -26,6 +26,16 @@ const ProjectModal = (props: ProjectModalProps) => {
             {props.title}
           </span>
           <span>{props.content}</span>
+          <div className="w-max self-end">
+            <Button
+              gradientMonochrome="failure"
+              onClick={() => {
+                props.handleClose();
+              }}
+            >
+              Close
+            </Button>
+          </div>
         </div>
       </Modal.Body>
     </Modal>
