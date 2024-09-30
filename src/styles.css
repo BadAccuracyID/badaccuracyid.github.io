@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content {
+  padding-top: 15%;
+}
+
+.left-pad {
+  padding-left: 15%;
+}
+
+.left-pad-reverse {
+  padding-right: 85%;
+}
+
+.background {
+  background-color: #0e0c15;
+}
+
+.card-color {
+  background-color: #252525;
+}
+
+.navbar-blur {
+  background-color: rgba(14, 12, 21, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-logo {
+  height: 50px;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing-animation-container {
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.typing-animation {
+  display: inline-block;
+  border-right: 0.1em solid white;
+  animation: blink-caret 0.75s infinite;
+}
+
+.typing-animation.blink {
+  border-color: transparent !important;
+}
+
+.next-arrow {
+  color: #5918df;
+  font-size: 2rem;
+}
+
+/*.scroll-container {*/
+/*    height: 100vh;*/
+/*    overflow-y: scroll;*/
+/*    scroll-snap-type: y mandatory;*/
+/*}*/
+
+/*section {*/
+/*    height: 100vh;*/
+/*    scroll-snap-align: center;*/
+/*}*/
+
+.h-300 {
+  height: 300px;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.max-w-70 {
+  max-width: 70%;
+}
+
+.max-h-300 {
+  max-height: 300px;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.innovation-image {
+  height: 40vw;
+}
+
+.vertical-timeline {
+  background-color: #5918df;
+  height: 100vh;
+
+  left: 15%;
+
+  object-fit: cover;
+  overflow: hidden;
+
+  position: fixed;
+  z-index: 0;
+
+  width: 1px;
+}
+
+.vertical-timeline-end {
+  left: calc(15% - 0.75rem);
+  bottom: 50px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.vertical-timeline-end-dot {
+  border-radius: 50%;
+}
+
+.cool-bg {
+  background: #0e0c15;
+
+  background: linear-gradient(to left, #0e0c15 50%, rgb(108 43 217) 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+.cool-bg:hover {
+  background-position: left;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+.h-\[420px\] {
+  height: 420px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.group:hover .group-hover\:my-rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.backface-hidden {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.my-rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+li:hover p {
+  color: rgb(229 231 235);
+}
+
+.text-stroke {
+  color: #0e0c15;
+  -webkit-text-stroke: 0.5px rgb(156 163 175);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
