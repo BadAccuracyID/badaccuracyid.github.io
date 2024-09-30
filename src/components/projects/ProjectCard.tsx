@@ -1,11 +1,10 @@
 import { animated, useTransition } from '@react-spring/web';
 import { Button } from 'flowbite-react';
 import { useEffect, useState } from 'react';
-import { AiFillInfoCircle } from 'react-icons/ai';
 import { FaGithub, FaLink } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
-import PopupWrapper from '@/components/popup/PopupWrapper';
+import ProjectModal from '@/components/projects/ProejctModal';
 
 interface ProjectCardProps {
   title: string;
@@ -21,6 +20,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = (props: ProjectCardProps) => {
+  const [isModalOpen, setModalOpen] = useState<boolean>(false);
   const [imgIndex, setImgIndex] = useState<number>(0);
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
@@ -52,43 +52,50 @@ const ProjectCard = (props: ProjectCardProps) => {
   }
 
   const element: JSX.Element = (
-    <div
-      className={
-        'z-50 flex w-fit flex-col items-center justify-center gap-2 text-center'
-      }
-    >
-      <p className={'text-2xl font-bold text-white'}>{props.title}</p>
-      <div className="flex flex-row gap-4">
-        <a href={props.github} target="_blank" rel="noreferrer">
-          <FaGithub
-            className={'size-6 cursor-pointer text-white hover:scale-110'}
-          />
-        </a>
-        <a href={props.link} target="_blank" rel="noreferrer">
-          <FaLink
-            className={'size-6 cursor-pointer text-white hover:scale-110'}
-          />
-        </a>
-      </div>
-
-      <div
-        className={
-          'mt-4 flex flex-col rounded-md bg-black p-2 text-start font-mono text-slate-400'
-        }
-      >
+    <div className="flex w-full flex-col items-center justify-center gap-2 text-center">
+      <div className="mt-4 flex flex-col rounded-md bg-black p-2 text-start font-mono text-slate-400">
         <p>{'/**'}</p>
         {props.descriptions.map((description, index) => (
           <p key={index}>&nbsp;* {description}</p>
         ))}
         <p>&nbsp;*/</p>
       </div>
+
+      <div className="mt-4 flex w-max flex-row gap-4 self-end">
+        {props.github && (
+          <a href={props.github} target="_blank" rel="noreferrer">
+            <Button color="blue">
+              <div className="flex flex-row items-center gap-2">
+                <FaGithub className="size-5 cursor-pointer text-white hover:scale-110" />
+                <span className="text-lg">GitHub</span>
+              </div>
+            </Button>
+          </a>
+        )}
+        {props.link && (
+          <a href={props.link} target="_blank" rel="noreferrer">
+            <Button color="blue">
+              <div className="flex flex-row items-center gap-2">
+                <FaLink className="size-5 cursor-pointer text-white hover:scale-110" />
+                <span className="text-lg">Other Link</span>
+              </div>
+            </Button>
+          </a>
+        )}
+      </div>
     </div>
   );
 
-  const [toggle, popup] = PopupWrapper(element);
   return (
     <div>
-      {popup}
+      <ProjectModal
+        title={props.title}
+        content={element}
+        visible={isModalOpen}
+        handleClose={function (): void {
+          setModalOpen(false);
+        }}
+      />
       <div className="flex h-max flex-col gap-2 object-cover">
         <div
           className="scrollbar-hide cursor-pointer snap-x snap-mandatory flex-row gap-8"
@@ -119,18 +126,13 @@ const ProjectCard = (props: ProjectCardProps) => {
         </div>
 
         <div className="mt-4 flex flex-col">
-          <div className="relative w-fit self-center px-6 pt-2 text-center text-3xl font-semibold text-white">
+          <div
+            className="relative w-fit animate-pulse cursor-pointer self-center px-6 pt-2 text-center text-3xl font-semibold text-white transition-all hover:scale-105 md:animate-none"
+            onClick={() => {
+              setModalOpen(true);
+            }}
+          >
             {props.title}
-            <div
-              className={'absolute right-0 top-0'}
-              onClick={() => {
-                toggle(true);
-              }}
-            >
-              <AiFillInfoCircle
-                className={'size-6 cursor-pointer text-gray-500'}
-              />
-            </div>
           </div>
           <div className="text-center text-gray-500">
             {props.shortDescription}
@@ -141,7 +143,7 @@ const ProjectCard = (props: ProjectCardProps) => {
           >
             <Link
               to={props.prevLink}
-              containerId={'projectsContainer'}
+              containerId="projectsContainer"
               smooth={true}
               horizontal={true}
             >
@@ -156,7 +158,7 @@ const ProjectCard = (props: ProjectCardProps) => {
             </Link>
             <Link
               to={props.nextLink}
-              containerId={'projectsContainer'}
+              containerId="projectsContainer"
               smooth={true}
               horizontal={true}
             >
