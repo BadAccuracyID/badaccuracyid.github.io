@@ -9,7 +9,7 @@ import ProjectCard from '@/components/projects/ProjectCard';
 export default function EFIO() {
   const title = 'EFIO';
   const shortDescription =
-    'Android application used by BINUS University’s SLC laboratory assistants to check laboratory room transactions, such as teaching schedule and borrowing schedule, and to log room borrowing.';
+    'Android application for BINUS University’s SLC laboratory assistants to check laboratory room transactions and to log room borrowing.';
   const year = '2023';
   const descriptions: string[] = [
     'A room transaction checking system for SLC’s 23-1 generation project.',

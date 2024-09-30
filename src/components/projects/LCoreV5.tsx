@@ -9,7 +9,7 @@ import ProjectCard from '@/components/projects/ProjectCard';
 export default function LCoreV5() {
   const title = 'LyraCore (LuckyCoreV5)';
   const shortDescription =
-    'Minecraft server core plugin to handle player rank synchronization, cross-server messaging, cross server player reporting, staff tracking/listing, staff chats, player disguising system, and more.';
+    'Minecraft server core plugin to handle player rank synchronization, cross-server messaging, staff listing, staff chats, player disguising system, and more.';
   const year = '2021';
   const descriptions: string[] = [
     'High-performance and feature rich server core plugin.',
