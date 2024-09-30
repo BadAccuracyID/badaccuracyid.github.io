@@ -152,7 +152,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 
           <div className="mt-4 flex flex-row items-center justify-center gap-2">
             <Link
-              to={props.prevLink == 'prev' ? 'aboutme' : props.prevLink}
+              to={props.prevLink == 'prev' ? 'experiences' : props.prevLink}
               containerId={props.prevLink == 'prev' ? '' : 'projectsContainer'}
               smooth={true}
               horizontal={props.prevLink == 'prev' ? false : true}
