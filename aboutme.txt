@@ -1,0 +1,32 @@
+data class Efran_Nathanael(
+    val name: String = "Efran Nathanael",
+    val dateOfBirth: String = "2004-02-12",
+    val gender: String = "MALE"
+) {
+
+	fun education(): Map<String, String> {
+		return mutableMapOf(
+			"2022-now" to "Binus University - Computer Science",
+			"2019-2022" to "Marsudirini Bekasi Senior High School",
+		);
+	}
+
+	fun workExperience(): Map<String, String> {
+		return mutableMapOf(
+			"2024-now" to "Teaching Assistant Development Officer at Binus University",
+			"2023-now" to "Junior Laboratory Assistant at Binus University",
+			"2021-2023" to "Chief Technology Officer at LuckyNetwork SEA",
+			"2019-2021" to "Development Department Leader at LuckyNetwork SEA",
+			"2019-2019" to "Administrator at LuckyNetwork SEA"
+		);
+	}
+
+	fun skills(): List<String> {
+		return arrayOf(
+			"Java", "Kotlin", "C++", "Bash", "Python", "PHP",
+			"HTML/CSS/JS", "Typescript", "Laravel", "PL/SQL",
+			"MySQL", "SQLite", "PostgreSQL", "MongoDB", "Redis", "gRPC", "GraphQL", "REST",
+		);
+	}
+
+}
