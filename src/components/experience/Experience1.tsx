@@ -18,7 +18,7 @@ interface WorkProgramTimelineProps {
 export function Experience1() {
   const data: WorkProgramTimelineProps[] = [
     {
-      title: 'BINUS University Teaching Assistant Development Officer',
+      title: 'BINUS University - Teaching Assistant Development Officer',
       timeframe: 'January 2024 to Now',
       items: [
         'Responsible in the growth and development of BINUS University’s laboratory assistants by managing Test Progressing Assistant (TPA) and Research Interest Group (RIG).',
@@ -29,7 +29,7 @@ export function Experience1() {
       titleColor: 'text-cyan-200',
     },
     {
-      title: 'BINUS University Junior Laboratory Assistant',
+      title: 'BINUS University - Junior Laboratory Assistant',
       timeframe: 'February 2023 to January 2024',
       items: [
         'Successfully taught more than 360 BINUS University students about various subjects, such as iOS app development, C++, Data Structures, Java Object Oriented Programming, Database Systems, etc.',
@@ -40,7 +40,7 @@ export function Experience1() {
       titleColor: 'text-amber-200',
     },
     {
-      title: 'LuckyNetwork SEA Cheif Technology Officer',
+      title: 'LuckyNetwork SEA - Cheif Technology Officer',
       timeframe: 'January 2021 to Feburary 2023',
       items: [
         'Successfully lead LuckyNetwork’s technological development and development team, making LuckyNetwork Indonesia’s most technologically advanced Minecraft server at the time.',

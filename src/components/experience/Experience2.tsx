@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import type { FlowbiteTimelinePointTheme } from 'flowbite-react';
-import { Timeline } from 'flowbite-react';
+import { List, Timeline } from 'flowbite-react';
 import type { DeepPartial } from 'node_modules/flowbite-react/dist/types/types';
 import { FaArrowLeft, FaCode } from 'react-icons/fa';
 import { HiCalendar } from 'react-icons/hi';
@@ -18,7 +18,7 @@ interface WorkProgramTimelineProps {
 export function Experience2() {
   const data: WorkProgramTimelineProps[] = [
     {
-      title: 'LuckyNetwork SEA Leader of Lucky Development Department',
+      title: 'LuckyNetwork SEA - Leader of Lucky Development Department',
       timeframe: 'November 2019 to January 2021',
       items: [
         'Successfully lead LuckyNetwork’s development team, consisting of plugin developers, server setup specialists, and builders.',
@@ -29,7 +29,7 @@ export function Experience2() {
       titleColor: 'text-blue-200',
     },
     {
-      title: 'LuckyNetwork SEA Administrator',
+      title: 'LuckyNetwork SEA - Administrator',
       timeframe: 'January 2019 to November 2019',
       items: [
         'Successfully enforced LuckyNetwork’s rule and maintained LuckyNetwork’s community.',
@@ -40,7 +40,7 @@ export function Experience2() {
       titleColor: 'text-red-200',
     },
     {
-      title: 'LuckyNetwork SEA Moderator',
+      title: 'LuckyNetwork SEA - Moderator',
       timeframe: 'November 2018 to January 2019',
       items: [
         'Minecraft Server Moderator that is responsible in maintaining a safe and fun environment for the players. Enforce server rules, issue warnings, mutes, kicks, and bans when necessary.',
@@ -100,11 +100,11 @@ function GetTimeline({
                 {timelineProp.timeframe}
               </Timeline.Time>
               <Timeline.Body className="mt-2">
-                <ol className="flex flex-col gap-1">
+                <List className="flex flex-col gap-1">
                   {timelineProp.items.map((item, index) => {
-                    return <li key={index}>{item}</li>;
+                    return <List.Item key={index}>{item}</List.Item>;
                   })}
-                </ol>
+                </List>
               </Timeline.Body>
             </Timeline.Content>
           </Timeline.Item>
