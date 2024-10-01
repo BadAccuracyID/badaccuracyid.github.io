@@ -7,7 +7,7 @@ interface WhyMeProps {
   icon: ReactNode;
 }
 
-export function WhyMePurple({ prop }: { prop: WhyMeProps }) {
+export function ContactCardPurple({ prop }: { prop: WhyMeProps }) {
   const bg = 'bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700';
 
   return (
@@ -74,7 +74,7 @@ export function WhyMePurple({ prop }: { prop: WhyMeProps }) {
   );
 }
 
-export function WhyMeRed({ prop }: { prop: WhyMeProps }) {
+export function ContactCardRed({ prop }: { prop: WhyMeProps }) {
   const bg = 'bg-gradient-to-r from-red-400 via-red-500 to-red-600';
 
   return (
@@ -147,7 +147,7 @@ export function WhyMeRed({ prop }: { prop: WhyMeProps }) {
   );
 }
 
-export function WhyMeGreen({ prop }: { prop: WhyMeProps }) {
+export function ContactCardGreen({ prop }: { prop: WhyMeProps }) {
   const bg = 'bg-gradient-to-r from-green-400 via-green-500 to-green-500';
 
   return (
@@ -219,7 +219,7 @@ export function WhyMeGreen({ prop }: { prop: WhyMeProps }) {
   );
 }
 
-export function WhyMeAmber({ prop }: { prop: WhyMeProps }) {
+export function ContactCardAmber({ prop }: { prop: WhyMeProps }) {
   const bg = 'bg-gradient-to-r from-amber-400 via-amber-500 to-amber-500';
 
   return (
@@ -293,7 +293,7 @@ export function WhyMeAmber({ prop }: { prop: WhyMeProps }) {
   );
 }
 
-export function WhyMeBlue({ prop }: { prop: WhyMeProps }) {
+export function ContactCardBlue({ prop }: { prop: WhyMeProps }) {
   const bg = 'bg-gradient-to-r from-blue-400 via-blue-500 to-blue-500';
 
   return (
