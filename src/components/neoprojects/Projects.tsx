@@ -1,0 +1,31 @@
+import { useState } from 'react';
+import { Element } from 'react-scroll';
+
+import { EDisplayMode } from '@/components/neoprojects/EDisplayMode';
+import ModeSelector from '@/components/neoprojects/modeselector';
+import ProjectsView from '@/components/neoprojects/view';
+
+const Neo_ProjectsComponent = () => {
+  const [displayMode, setDisplayMode] = useState(EDisplayMode.CAROUSEL);
+
+  return (
+    <Element
+      id="projects"
+      name="projects"
+      className="left-pad mt-10 flex min-h-screen flex-col justify-center"
+    >
+      <div className="pl-5">
+        <div className="text-xl text-gray-600">fun projects() {'{'}</div>
+      </div>
+
+      <ModeSelector mode={displayMode} setMode={setDisplayMode} />
+      <ProjectsView mode={displayMode} />
+
+      <div className="pl-5">
+        <div className="text-xl text-gray-600">{'}'}</div>
+      </div>
+    </Element>
+  );
+};
+
+export default Neo_ProjectsComponent;
