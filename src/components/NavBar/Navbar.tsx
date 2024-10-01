@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import NavBarContainer from '@/components/navbar/container/container';
 import NavBarItem from '@/components/navbar/item';
 import NavBarLogo from '@/components/navbar/logo';
 
@@ -11,10 +12,10 @@ const NavBarComponent = () => {
   const isActive = (item: string) => active === item;
 
   return (
-    <div className="navbar-blur fixed z-50 hidden w-full flex-row flex-wrap items-center justify-between px-3 py-1 md:flex">
+    <NavBarContainer>
       <NavBarLogo setActive={setActive} />
 
-      <ul className="flex flex-row flex-wrap items-center justify-between gap-2">
+      <NavBarContainer.ItemList>
         {items.map((item) => (
           <NavBarItem
             key={item}
@@ -23,8 +24,8 @@ const NavBarComponent = () => {
             setActive={setActive}
           />
         ))}
-      </ul>
-    </div>
+      </NavBarContainer.ItemList>
+    </NavBarContainer>
   );
 };
 
