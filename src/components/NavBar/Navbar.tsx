@@ -3,38 +3,26 @@ import { useState } from 'react';
 import NavBarItem from '@/components/NavBar/item';
 import NavBarLogo from '@/components/NavBar/logo';
 
-const NavBarComponent = () => {
-  const [activeItem, setActiveItem] = useState<string>('');
+const items = ['About Me', 'Experiences', 'Projects', 'Contacts'];
 
-  function isActive(item: string) {
-    return item === activeItem;
-  }
+const NavBarComponent = () => {
+  const [active, setActive] = useState<string>('');
+
+  const isActive = (item: string) => active === item;
 
   return (
     <div className="navbar-blur fixed z-50 hidden w-full flex-row flex-wrap items-center justify-between px-3 py-1 md:flex">
-      <NavBarLogo setActive={setActiveItem} />
+      <NavBarLogo setActive={setActive} />
 
       <ul className="flex flex-row flex-wrap items-center justify-between gap-2">
-        <NavBarItem
-          title="About Me"
-          isActive={isActive('About Me')}
-          setActive={setActiveItem}
-        />
-        <NavBarItem
-          title="Experiences"
-          isActive={isActive('Experiences')}
-          setActive={setActiveItem}
-        />
-        <NavBarItem
-          title="Projects"
-          isActive={isActive('Projects')}
-          setActive={setActiveItem}
-        />
-        <NavBarItem
-          title="Contacts"
-          isActive={isActive('Contacts')}
-          setActive={setActiveItem}
-        />
+        {items.map((item) => (
+          <NavBarItem
+            key={item}
+            title={item}
+            isActive={isActive(item)}
+            setActive={setActive}
+          />
+        ))}
       </ul>
     </div>
   );
