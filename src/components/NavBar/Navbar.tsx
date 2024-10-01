@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import NavBarItem from '@/components/NavBar/item';
-import NavBarLogo from '@/components/NavBar/logo';
+import NavBarItem from '@/components/navbar/item';
+import NavBarLogo from '@/components/navbar/logo';
 
 const items = ['About Me', 'Experiences', 'Projects', 'Contacts'];
 

@@ -1,17 +1,19 @@
 import AboutMeComponent from '@/components/aboutme/AboutMe';
 import ContactsComponent from '@/components/contact/Contacts';
 import ExperiencesComponent from '@/components/experience/Experiences';
+import HomeContainer from '@/components/home/HomeContainer';
 import IntroductionComponent from '@/components/introduction/Introduction';
 import JumperComponent from '@/components/jumper/Jumper';
-import NavBarComponent from '@/components/NavBar/Navbar';
+import NavBarComponent from '@/components/navbar/Navbar';
 import ProjectsComponent from '@/components/projects/Projects';
+import VerticalTimeline from '@/components/timeline/VerticalTimeline';
 
 export default function Home() {
   return (
-    <div className="relative">
+    <HomeContainer>
       <NavBarComponent />
 
-      <div className="vertical-timeline" />
+      <VerticalTimeline />
       <JumperComponent />
 
       <>
@@ -21,6 +23,6 @@ export default function Home() {
         <ProjectsComponent />
         <ContactsComponent />
       </>
-    </div>
+    </HomeContainer>
   );
 }
