@@ -15,7 +15,7 @@ const GridCard = (props: GridCardProps) => {
   return (
     <div
       className={cn(
-        ' cursor-pointer overflow-hidden relative card h-96  max-w-lg rounded-md shadow-xl mx-auto backgroundImage flex flex-col justify-between p-4 group/card',
+        ' cursor-pointer overflow-hidden relative card h-60 md:h-96 max-w-xs md:max-w-lg rounded-md shadow-xl mx-auto backgroundImage flex flex-col justify-between p-4 group/card',
       )}
       style={{
         backgroundImage: `url(${image})`,
@@ -34,7 +34,7 @@ const GridCard = (props: GridCardProps) => {
         </div>
       </div>
 
-      <div className="z-10 flex-row items-center space-x-4 self-center opacity-0 transition duration-300 group-hover/card:flex group-hover/card:opacity-100">
+      <div className="z-10 hidden flex-row items-center space-x-4 self-center opacity-0 transition duration-300 group-hover/card:opacity-100 md:group-hover/card:flex">
         {props.project.github && (
           <button
             type="button"
@@ -72,7 +72,7 @@ const GridCard = (props: GridCardProps) => {
           {props.project.tags.map((tag) => (
             <span
               key={tag}
-              className="mr-1 inline-block rounded-full bg-gray-800 px-2 py-1 text-xs font-semibold text-gray-50"
+              className="mr-1 hidden rounded-full bg-gray-800 px-2 py-1 text-xs font-semibold text-gray-50 md:inline-block"
             >
               {tag}
             </span>
@@ -81,7 +81,7 @@ const GridCard = (props: GridCardProps) => {
         <h1 className="relative z-10 text-xl font-bold text-gray-50 md:text-2xl">
           {props.project.title}
         </h1>
-        <p className="relative z-10 my-4 text-sm font-normal text-gray-50">
+        <p className="relative z-10 mt-4 line-clamp-2 text-sm font-normal text-gray-50 md:line-clamp-4">
           {props.project.shortDescription}
         </p>
       </div>
