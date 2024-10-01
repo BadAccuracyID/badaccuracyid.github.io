@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Element } from 'react-scroll';
 
-import { EDisplayMode } from '@/components/neoprojects/EDisplayMode';
-import ModeSelector from '@/components/neoprojects/modeselector';
-import ProjectsView from '@/components/neoprojects/view';
+import { EDisplayMode } from '@/components/projects/EDisplayMode';
+import ModeSelector from '@/components/projects/modeselector';
+import ProjectsView from '@/components/projects/view';
 
 const ProjectsComponent = () => {
   const [displayMode, setDisplayMode] = useState(EDisplayMode.ALL);

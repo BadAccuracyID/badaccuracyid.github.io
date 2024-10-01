@@ -16,7 +16,7 @@ import less1Image from 'public/less/less1.png';
 import less2Image from 'public/less/less2.png';
 import less3Image from 'public/less/less3.png';
 
-import type { IProject } from '@/components/neoprojects/EDisplayMode';
+import type { IProject } from '@/components/projects/EDisplayMode';
 
 const projects: IProject[] = [
   {

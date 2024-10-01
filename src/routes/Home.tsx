@@ -6,7 +6,7 @@ import VerticalTimeline from '@/components/home/VerticalTimeline';
 import IntroductionComponent from '@/components/introduction/Introduction';
 import JumperComponent from '@/components/jumper/Jumper';
 import NavBarComponent from '@/components/navbar/Navbar';
-import ProjectsComponent from '@/components/neoprojects/Projects';
+import ProjectsComponent from '@/components/projects/Projects';
 
 export default function Home() {
   return (

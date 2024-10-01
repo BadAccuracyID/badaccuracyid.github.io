@@ -1,7 +1,7 @@
 /* eslint-disable tailwindcss/migration-from-tailwind-2 */
 import { FaGithub, FaInfoCircle, FaLink } from 'react-icons/fa';
 
-import type { IProject } from '@/components/neoprojects/EDisplayMode';
+import type { IProject } from '@/components/projects/EDisplayMode';
 import { cn } from '@/util/utils';
 
 interface GridCardProps {

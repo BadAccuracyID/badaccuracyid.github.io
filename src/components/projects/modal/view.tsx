@@ -1,6 +1,6 @@
 import { Modal } from 'flowbite-react';
 
-import type { IProject } from '@/components/neoprojects/EDisplayMode';
+import type { IProject } from '@/components/projects/EDisplayMode';
 
 interface ProjectModalProps {
   project?: IProject;

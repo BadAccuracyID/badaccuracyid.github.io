@@ -1,7 +1,7 @@
-import ProjectsCarousel from '@/components/neoprojects/carousel/view';
-import { EDisplayMode } from '@/components/neoprojects/EDisplayMode';
-import ProjectsGrid from '@/components/neoprojects/grid/view';
-import projects from '@/components/neoprojects/items';
+import ProjectsCarousel from '@/components/projects/carousel/view';
+import { EDisplayMode } from '@/components/projects/EDisplayMode';
+import ProjectsGrid from '@/components/projects/grid/view';
+import projects from '@/components/projects/items';
 
 interface ProjectsViewProps {
   mode: EDisplayMode;

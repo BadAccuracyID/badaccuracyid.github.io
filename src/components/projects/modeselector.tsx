@@ -1,7 +1,7 @@
 import { Button } from 'flowbite-react';
 import { FaClone, FaGripHorizontal } from 'react-icons/fa';
 
-import { EDisplayMode } from '@/components/neoprojects/EDisplayMode';
+import { EDisplayMode } from '@/components/projects/EDisplayMode';
 
 interface ModeSelectorProps {
   mode: EDisplayMode;

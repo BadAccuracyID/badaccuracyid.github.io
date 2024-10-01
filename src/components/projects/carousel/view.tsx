@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Element } from 'react-scroll';
 
-import CarouselCard from '@/components/neoprojects/carousel/card';
-import type { IProject } from '@/components/neoprojects/EDisplayMode';
-import ProjectModal from '@/components/neoprojects/modal/view';
+import CarouselCard from '@/components/projects/carousel/card';
+import type { IProject } from '@/components/projects/EDisplayMode';
+import ProjectModal from '@/components/projects/modal/view';
 
 interface ProjectsCarouselProps {
   projects: IProject[];

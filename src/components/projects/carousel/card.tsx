@@ -3,7 +3,7 @@ import { Button } from 'flowbite-react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 
-import type { IProject } from '@/components/neoprojects/EDisplayMode';
+import type { IProject } from '@/components/projects/EDisplayMode';
 
 interface CarouselCardProps {
   project: IProject;
