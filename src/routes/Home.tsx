@@ -6,14 +6,13 @@ import AboutMeComponent from '@/components/aboutme/AboutMe';
 import ContactsComponent from '@/components/contact/Contacts';
 import ExperiencesComponent from '@/components/experience/Experiences';
 import IntroductionComponent from '@/components/introduction/Introduction';
+import NavBarComponent from '@/components/NavBar/Navbar';
 import ProjectsComponent from '@/components/projects/Projects';
-
-import Navbar from '../components/Navbar.tsx';
 
 export default function Home() {
   return (
     <div className="background relative">
-      <Navbar />
+      <NavBarComponent />
 
       <div className="vertical-timeline" />
       <Link
