@@ -6,7 +6,7 @@ import ModeSelector from '@/components/neoprojects/modeselector';
 import ProjectsView from '@/components/neoprojects/view';
 
 const ProjectsComponent = () => {
-  const [displayMode, setDisplayMode] = useState(EDisplayMode.CAROUSEL);
+  const [displayMode, setDisplayMode] = useState(EDisplayMode.ALL);
 
   return (
     <Element
