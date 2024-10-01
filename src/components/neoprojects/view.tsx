@@ -1,6 +1,7 @@
 import ProjectsCarousel from '@/components/neoprojects/carousel/view';
 import { EDisplayMode } from '@/components/neoprojects/EDisplayMode';
 import ProjectsGrid from '@/components/neoprojects/grid/view';
+import projects from '@/components/neoprojects/items';
 
 interface ProjectsViewProps {
   mode: EDisplayMode;
@@ -8,9 +9,17 @@ interface ProjectsViewProps {
 
 const ProjectsView = (props: ProjectsViewProps) => {
   if (props.mode === EDisplayMode.ALL) {
-    return <ProjectsGrid />;
+    return (
+      <div className="px-10">
+        <ProjectsGrid projects={projects} />
+      </div>
+    );
   } else {
-    return <ProjectsCarousel />;
+    return (
+      <div>
+        <ProjectsCarousel />
+      </div>
+    );
   }
 };
 

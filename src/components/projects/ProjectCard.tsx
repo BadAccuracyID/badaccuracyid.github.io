@@ -10,6 +10,7 @@ interface ProjectCardProps {
   title: string;
   shortDescription: string;
   year: string;
+  company: string;
   descriptions: string[];
   images: string[];
   link?: string;
@@ -147,7 +148,7 @@ const ProjectCard = (props: ProjectCardProps) => {
             {props.shortDescription}
           </div>
           <div className="text-center text-sm text-gray-700">
-            ({props.year})
+            {props.company} - {props.year}
           </div>
 
           <div className="mt-4 flex flex-row items-center justify-center gap-2">

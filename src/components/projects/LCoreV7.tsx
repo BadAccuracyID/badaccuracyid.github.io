@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
-import lcore1Image from 'public/lcorev7/lcorev7_1.png';
-import lcore2Image from 'public/lcorev7/lcorev7_2.png';
-import lcore3Image from 'public/lcorev7/lcorev7_3.png';
+import lcoreV71Image from 'public/lcorev7/lcorev7_1.png';
+import lcoreV72Image from 'public/lcorev7/lcorev7_2.png';
+import lcoreV73Image from 'public/lcorev7/lcorev7_3.png';
 
 import ProjectCard from '@/components/projects/ProjectCard';
 
@@ -16,7 +16,7 @@ export default function LCoreV7() {
     'Ensured reliability and performance to support LuckyNetwork’s growing player base.',
     'Despite being discontinued in 2023, many elements of LuckyCoreV7 remain active in 2024, supporting hundreds of concurrent players.',
   ];
-  const images = [lcore1Image, lcore2Image, lcore3Image];
+  const images = [lcoreV71Image, lcoreV72Image, lcoreV73Image];
   const link = 'https://www.luckynetwork.net/en';
   const github = '';
   const tags = ['Java', 'gRPC', 'MySQL'];

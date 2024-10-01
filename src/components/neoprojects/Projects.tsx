@@ -12,7 +12,7 @@ const Neo_ProjectsComponent = () => {
     <Element
       id="projects"
       name="projects"
-      className="left-pad mt-10 flex min-h-screen flex-col justify-center"
+      className="left-pad mt-10 flex min-h-screen flex-col justify-center gap-4"
     >
       <div className="pl-5">
         <div className="text-xl text-gray-600">fun projects() {'{'}</div>
