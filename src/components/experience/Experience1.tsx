@@ -40,7 +40,7 @@ export function Experience1() {
       titleColor: 'text-amber-200',
     },
     {
-      title: 'LuckyNetwork SEA - Cheif Technology Officer',
+      title: 'LuckyNetwork SEA - Chief Technology Officer',
       timeframe: 'January 2021 to Feburary 2023',
       items: [
         'Successfully lead LuckyNetwork’s technological development and development team, making LuckyNetwork Indonesia’s most technologically advanced Minecraft server at the time.',

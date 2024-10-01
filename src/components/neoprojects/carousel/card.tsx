@@ -7,18 +7,15 @@ import type { IProject } from '@/components/neoprojects/EDisplayMode';
 
 interface CarouselCardProps {
   project: IProject;
+  onCardClick: (id: string) => void;
 
   nextLink: string;
   prevLink: string;
 }
 
 const CarouselCard = (props: CarouselCardProps) => {
-  const [isModalOpen, setModalOpen] = useState<boolean>(false);
   const [imgIndex, setImgIndex] = useState<number>(0);
   const [isHovered, setIsHovered] = useState<boolean>(false);
-
-  console.log('Next of ' + props.project.id + ' is ' + props.nextLink);
-  console.log('Prev of ' + props.project.id + ' is ' + props.prevLink);
 
   const transition = useTransition(imgIndex, {
     key: imgIndex,
@@ -82,7 +79,7 @@ const CarouselCard = (props: CarouselCardProps) => {
         <div
           className="relative w-fit animate-pulse cursor-pointer self-center px-6 pt-2 text-center text-3xl font-semibold text-white transition-all hover:scale-105 md:animate-none"
           onClick={() => {
-            setModalOpen(true);
+            props.onCardClick(props.project.id);
           }}
         >
           {props.project.title}

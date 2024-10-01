@@ -1,13 +1,27 @@
+import { useState } from 'react';
 import { Element } from 'react-scroll';
 
 import CarouselCard from '@/components/neoprojects/carousel/card';
 import type { IProject } from '@/components/neoprojects/EDisplayMode';
+import ProjectModal from '@/components/neoprojects/modal/view';
 
 interface ProjectsCarouselProps {
   projects: IProject[];
 }
 
 const ProjectsCarousel = (props: ProjectsCarouselProps) => {
+  const [selectedProject, setSelectedProject] = useState<IProject | undefined>(
+    undefined,
+  );
+
+  const handleProjectClick = (id: string) => {
+    setSelectedProject(props.projects.find((project) => project.id === id));
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(undefined);
+  };
+
   const getNextLink = (id: string) => {
     const index = props.projects.findIndex((project) => project.id === id);
     if (index === -1 || index === props.projects.length - 1) return 'next';
@@ -25,6 +39,12 @@ const ProjectsCarousel = (props: ProjectsCarouselProps) => {
       id="projectsContainer"
       className="scrollbar-hide mx-16 my-4 flex flex-row gap-48 overflow-scroll"
     >
+      <ProjectModal
+        project={selectedProject}
+        isVisible={selectedProject !== undefined}
+        onClose={handleCloseModal}
+      />
+
       {props.projects.map((project) => (
         <Element
           key={project.id}
@@ -34,6 +54,7 @@ const ProjectsCarousel = (props: ProjectsCarouselProps) => {
         >
           <CarouselCard
             project={project}
+            onCardClick={handleProjectClick}
             nextLink={getNextLink(project.id)}
             prevLink={getPrevLink(project.id)}
           />

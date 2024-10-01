@@ -93,7 +93,7 @@ const projects: IProject[] = [
     tags: ['Java', 'gRPC', 'MySQL'],
   },
   {
-    id: 'lbw1058',
+    id: 'efio',
     title: 'EFIO',
     shortDescription:
       'Android application for BINUS University’s SLC laboratory assistants to check laboratory room transactions and to log room borrowing.',

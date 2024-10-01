@@ -1,11 +1,12 @@
 /* eslint-disable tailwindcss/migration-from-tailwind-2 */
-import { FaGithub, FaLink } from 'react-icons/fa';
+import { FaGithub, FaInfoCircle, FaLink } from 'react-icons/fa';
 
 import type { IProject } from '@/components/neoprojects/EDisplayMode';
 import { cn } from '@/util/utils';
 
 interface GridCardProps {
   project: IProject;
+  onCardClick: (id: string) => void;
 }
 
 const GridCard = (props: GridCardProps) => {
@@ -40,8 +41,8 @@ const GridCard = (props: GridCardProps) => {
             className="flex w-auto flex-row items-center justify-center gap-2 rounded-lg border border-gray-50 px-4 py-2 text-gray-50 transition duration-300 hover:scale-105"
             onClick={() => window.open(props.project.github, '_blank')}
           >
-            <FaGithub className="size-6 text-gray-50" />
-            <span className="font-semibold">GitHub</span>
+            <FaGithub className="size-4 text-gray-50" />
+            <span className="text-sm font-semibold">GitHub</span>
           </button>
         )}
         {props.project.link && (
@@ -50,10 +51,20 @@ const GridCard = (props: GridCardProps) => {
             className="flex w-auto flex-row items-center justify-center gap-2 rounded-lg border border-gray-50 px-4 py-2 text-gray-50 transition duration-300 hover:scale-105"
             onClick={() => window.open(props.project.link, '_blank')}
           >
-            <FaLink className="size-6 text-gray-50" />
-            <span className="font-semibold">Other Link</span>
+            <FaLink className="size-4 text-gray-50" />
+            <span className="text-sm font-semibold">Other Link</span>
           </button>
         )}
+        <button
+          type="button"
+          className="flex w-auto flex-row items-center justify-center gap-2 rounded-lg border border-gray-50 px-4 py-2 text-gray-50 transition duration-300 hover:scale-105"
+          onClick={() => {
+            props.onCardClick(props.project.id);
+          }}
+        >
+          <FaInfoCircle className="size-4 text-gray-50" />
+          <span className="text-sm font-semibold">More Info</span>
+        </button>
       </div>
 
       <div>
