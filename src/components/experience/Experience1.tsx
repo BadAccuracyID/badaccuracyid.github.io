@@ -10,6 +10,7 @@ interface WorkProgramTimelineProps {
   title: string;
   timeframe: string;
   items: string[];
+  experience: string[];
 
   iconColor: string | undefined;
   titleColor: string | undefined;
@@ -25,6 +26,14 @@ export function Experience1() {
         'Successfully reformed BINUS University SLC’s Academic Department usage of Git and GitHub.',
         'Developer of NeoAcad, a web application project for officers of BINUS University SLC’s Academic Department that will be used to manage Academic operations in BINUS University SLC.',
       ],
+      experience: [
+        'Excel',
+        'Laravel',
+        'Bun',
+        'Next.js',
+        'Svelte',
+        'PostgreSQL',
+      ],
       iconColor: 'cyan-600',
       titleColor: 'text-cyan-200',
     },
@@ -36,6 +45,17 @@ export function Experience1() {
         'Successfully improved BINUS University’s Database System subject software usage guide for Apple Silicon MacBook users.',
         'Awarded as the best performing assistant candidate.',
       ],
+      experience: [
+        'CI/CD',
+        'C#',
+        'MSSQL',
+        'SSMS',
+        'Unity',
+        'HTML/JS/CSS',
+        'TypeScript',
+        'Python',
+        'Android',
+      ],
       iconColor: 'amber-600',
       titleColor: 'text-amber-200',
     },
@@ -46,6 +66,13 @@ export function Experience1() {
         'Successfully lead LuckyNetwork’s technological development and development team, making LuckyNetwork Indonesia’s most technologically advanced Minecraft server at the time.',
         'Successfully designed LuckyNetwork’s microservice architecture for its core plugin and BedWars plugin.',
         'Played a key role in the development of LuckyNetwork’s core plugin that is responsible for cross-server player data synchronization and cross-server player communication.',
+      ],
+      experience: [
+        'gRPC',
+        'PL/SQL',
+        'Redis',
+        'Microservice Architecture',
+        'Cloud Infrastructure',
       ],
       iconColor: 'green-600',
       titleColor: 'text-emerald-200',
@@ -96,11 +123,21 @@ function GetTimeline({
                 {timelineProp.timeframe}
               </Timeline.Time>
               <Timeline.Body className="mt-2">
-                <List className="flex flex-col gap-1">
+                <List className="mb-4 flex flex-col gap-1">
                   {timelineProp.items.map((item, index) => {
                     return <List.Item key={index}>{item}</List.Item>;
                   })}
                 </List>
+                <div className="flex flex-row">
+                  {timelineProp.experience.map((exp) => (
+                    <span
+                      key={exp}
+                      className="mr-1 hidden rounded-full bg-gray-800 px-2 py-1 text-xs font-semibold text-gray-50 md:inline-block"
+                    >
+                      {exp}
+                    </span>
+                  ))}
+                </div>
               </Timeline.Body>
             </Timeline.Content>
           </Timeline.Item>

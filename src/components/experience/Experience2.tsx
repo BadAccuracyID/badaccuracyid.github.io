@@ -10,6 +10,7 @@ interface WorkProgramTimelineProps {
   title: string;
   timeframe: string;
   items: string[];
+  experience: string[];
 
   iconColor: string | undefined;
   titleColor: string | undefined;
@@ -25,6 +26,7 @@ export function Experience2() {
         'Successfully developed LuckyNetwork’s LuckyEssentialsJava, a lightweight but feature packed Minecraft plugin to enhance user experiences.',
         'Played a key role in the development of LuckyNetwork’s LuckyBedwars1058 plugin, which pushed LuckyNetwork’s player count to 1800+ concurrent players, making it the largest server in Southeast Asia.',
       ],
+      experience: ['Redis', 'MongoDB', 'MySQL', 'Gradle'],
       iconColor: 'blue-600',
       titleColor: 'text-blue-200',
     },
@@ -36,6 +38,7 @@ export function Experience2() {
         'Successfully improved and contributed in LuckyNetwork’s KitBattle server, which gets around 60 concurrent players.',
         'Successfully transformed a skript gamemode called ThePit into a Minecraft plugin written in Java.',
       ],
+      experience: ['Cache2k', 'Git', 'GitHub', 'Kotlin', 'Maven'],
       iconColor: 'red-600',
       titleColor: 'text-red-200',
     },
@@ -45,6 +48,7 @@ export function Experience2() {
       items: [
         'Minecraft Server Moderator that is responsible in maintaining a safe and fun environment for the players. Enforce server rules, issue warnings, mutes, kicks, and bans when necessary.',
       ],
+      experience: ['Java'],
       iconColor: 'yellow-600',
       titleColor: 'text-yellow-100',
     },
@@ -100,11 +104,21 @@ function GetTimeline({
                 {timelineProp.timeframe}
               </Timeline.Time>
               <Timeline.Body className="mt-2">
-                <List className="flex flex-col gap-1">
+                <List className="mb-4 flex flex-col gap-1">
                   {timelineProp.items.map((item, index) => {
                     return <List.Item key={index}>{item}</List.Item>;
                   })}
                 </List>
+                <div className="flex flex-row">
+                  {timelineProp.experience.map((exp) => (
+                    <span
+                      key={exp}
+                      className="mr-1 hidden rounded-full bg-gray-800 px-2 py-1 text-xs font-semibold text-gray-50 md:inline-block"
+                    >
+                      {exp}
+                    </span>
+                  ))}
+                </div>
               </Timeline.Body>
             </Timeline.Content>
           </Timeline.Item>
