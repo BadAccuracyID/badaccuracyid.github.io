@@ -34,6 +34,16 @@ const GridCard = (props: GridCardProps) => {
         </div>
       </div>
 
+      <div
+        className="z-10 flex size-full md:hidden"
+        onClick={() => {
+          // if on mobile, open the modal
+          if (window.innerWidth < 600) {
+            props.onCardClick(props.project.id);
+          }
+        }}
+      ></div>
+
       <div className="z-10 hidden flex-row items-center space-x-4 self-center opacity-0 transition duration-300 group-hover/card:opacity-100 md:group-hover/card:flex">
         {props.project.github && (
           <button

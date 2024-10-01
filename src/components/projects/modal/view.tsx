@@ -1,4 +1,4 @@
-import { Modal } from 'flowbite-react';
+import { Button, Modal } from 'flowbite-react';
 
 import type { IProject } from '@/components/projects/EDisplayMode';
 
@@ -10,29 +10,31 @@ interface ProjectModalProps {
 }
 
 const ProjectModal = (props: ProjectModalProps) => {
+  const size = window.innerWidth < 600 ? '' : '7xl';
   if (!props.project) return null;
   return (
     <Modal
       show={props.isVisible}
       onClose={props.onClose}
-      size="7xl"
-      className="w-full"
+      size={size}
       dismissible
     >
       <Modal.Body className="w-full">
-        <div className="flex w-full flex-row gap-12">
+        <div className="flex w-full flex-col gap-12 md:flex-row">
           {/* Left */}
-          <div className="flex w-[200px] flex-col">
-            <span className="text-2xl font-semibold">
+          <div className="flex flex-col md:w-[200px]">
+            <span className="text-3xl font-bold md:text-2xl md:font-semibold">
               {props.project.title}
             </span>
 
-            <span className="mt-6 text-lg font-semibold">Project Year</span>
-            <span className=" text-gray-400">{props.project.year}</span>
+            <span className="mt-4 text-lg font-semibold md:mt-6">
+              Project Year
+            </span>
+            <span className="text-gray-400">{props.project.year}</span>
 
             {props.project.link && (
               <>
-                <span className="mt-12 text-lg font-semibold">
+                <span className="mt-6 text-lg font-semibold md:mt-12">
                   Publication Link
                 </span>
                 <span className="line-clamp-3 text-gray-400">
@@ -45,7 +47,9 @@ const ProjectModal = (props: ProjectModalProps) => {
 
             {props.project.github && (
               <>
-                <span className="mt-12 text-lg font-semibold">GitHub</span>
+                <span className="mt-6 text-lg font-semibold md:mt-12">
+                  GitHub
+                </span>
                 <span className="line-clamp-3 text-gray-400">
                   <a
                     href={props.project.github}
@@ -58,7 +62,7 @@ const ProjectModal = (props: ProjectModalProps) => {
               </>
             )}
 
-            <span className="mt-12 text-lg font-semibold">
+            <span className="mt-6 text-lg font-semibold md:mt-12">
               Technology Stack
             </span>
             {props.project.tags.map((tag, index) => (
@@ -69,19 +73,21 @@ const ProjectModal = (props: ProjectModalProps) => {
           </div>
 
           {/* Right */}
-          <div className="flex w-max flex-col">
-            <span className="text-lg font-semibold">Description</span>
-            <span className="mt-6 text-lg font-semibold text-amber-500">
+          <div className="flex flex-col md:w-max">
+            <span className="text-2xl font-semibold md:text-lg">
+              Description
+            </span>
+            <span className="mt-2 text-lg font-semibold text-amber-500 md:mt-6">
               {props.project.shortDescription}
             </span>
-            <span className="mt-4 text-justify">
+            <span className="mt-2 text-justify md:mt-4">
               {props.project.longDescription.join(' ')}
             </span>
-            <div className="mt-4 grid auto-rows-[192px] grid-cols-3 gap-4">
+            <div className="mt-4 flex flex-col gap-2 md:grid md:auto-rows-[192px] md:grid-cols-3 md:gap-4">
               {props.project.images.map((image, i) => (
                 <div
                   key={i}
-                  className={`row-span-1 rounded-xl bg-neutral-100 ${
+                  className={`rounded-xl bg-neutral-100 md:row-span-1 ${
                     i === 1 || i === 2 ? 'col-span-2' : ''
                   }`}
                 >
@@ -96,6 +102,13 @@ const ProjectModal = (props: ProjectModalProps) => {
           </div>
         </div>
       </Modal.Body>
+      <Modal.Footer className="w-full">
+        <div className="flex w-full justify-center md:justify-end">
+          <Button color="failure" onClick={props.onClose} className="self-end">
+            Close
+          </Button>
+        </div>
+      </Modal.Footer>
     </Modal>
   );
 };
