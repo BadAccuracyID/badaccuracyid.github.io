@@ -17,6 +17,9 @@ const CarouselCard = (props: CarouselCardProps) => {
   const [imgIndex, setImgIndex] = useState<number>(0);
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
+  console.log('Next of ' + props.project.id + ' is ' + props.nextLink);
+  console.log('Prev of ' + props.project.id + ' is ' + props.prevLink);
+
   const transition = useTransition(imgIndex, {
     key: imgIndex,
     from: { opacity: 0 },

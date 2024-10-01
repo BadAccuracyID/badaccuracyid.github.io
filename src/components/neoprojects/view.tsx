@@ -17,7 +17,7 @@ const ProjectsView = (props: ProjectsViewProps) => {
   } else {
     return (
       <div>
-        <ProjectsCarousel />
+        <ProjectsCarousel projects={projects} />
       </div>
     );
   }

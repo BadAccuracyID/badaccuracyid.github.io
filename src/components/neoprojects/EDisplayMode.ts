@@ -4,6 +4,8 @@ export enum EDisplayMode {
 }
 
 export interface IProject {
+  id: string;
+
   title: string;
   shortDescription: string;
   longDescription: string[];

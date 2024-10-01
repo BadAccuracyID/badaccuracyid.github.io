@@ -20,6 +20,7 @@ import type { IProject } from '@/components/neoprojects/EDisplayMode';
 
 const projects: IProject[] = [
   {
+    id: 'lbw1058',
     title: 'LuckyBedWars1058',
     shortDescription:
       "Advanced BedWars plugin for LuckyNetwork's cloud based infrastructure and high player count.",
@@ -37,6 +38,7 @@ const projects: IProject[] = [
     tags: ['Java', 'Redis', 'MySQL', 'JavaFX'],
   },
   {
+    id: 'lcorev5',
     title: 'LyraCore (LuckyCoreV5)',
     shortDescription:
       'Minecraft server core plugin to handle player rank synchronization, cross-server messaging, staff listing, staff chats, player disguising system, and more.',
@@ -54,6 +56,7 @@ const projects: IProject[] = [
     tags: ['Java', 'Redis', 'MySQL', 'MongoDB'],
   },
   {
+    id: 'less',
     title: 'LuckyEssentialsJava',
     shortDescription:
       'Lightweight yet feature-rich plugin designed to improve the gameplay experience and moderation experience for Minecraft servers.',
@@ -72,6 +75,7 @@ const projects: IProject[] = [
     tags: ['Java'],
   },
   {
+    id: 'lcorev7',
     title: 'LuckyCoreV7',
     shortDescription:
       'Minecraft server core plugin that utilizes the micro-service architecture and gRPC to be as performant and scaleable as possible.',
@@ -89,6 +93,7 @@ const projects: IProject[] = [
     tags: ['Java', 'gRPC', 'MySQL'],
   },
   {
+    id: 'lbw1058',
     title: 'EFIO',
     shortDescription:
       'Android application for BINUS University’s SLC laboratory assistants to check laboratory room transactions and to log room borrowing.',

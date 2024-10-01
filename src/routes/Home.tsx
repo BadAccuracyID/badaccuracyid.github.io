@@ -6,8 +6,7 @@ import VerticalTimeline from '@/components/home/VerticalTimeline';
 import IntroductionComponent from '@/components/introduction/Introduction';
 import JumperComponent from '@/components/jumper/Jumper';
 import NavBarComponent from '@/components/navbar/Navbar';
-import Neo_ProjectsComponent from '@/components/neoprojects/Projects';
-import ProjectsComponent from '@/components/projects/Projects';
+import ProjectsComponent from '@/components/neoprojects/Projects';
 
 export default function Home() {
   return (
@@ -22,7 +21,6 @@ export default function Home() {
         <AboutMeComponent />
         <ExperiencesComponent />
         <ProjectsComponent />
-        <Neo_ProjectsComponent />
         <ContactsComponent />
       </>
     </HomeContainer>

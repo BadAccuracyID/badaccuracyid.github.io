@@ -5,7 +5,7 @@ import { EDisplayMode } from '@/components/neoprojects/EDisplayMode';
 import ModeSelector from '@/components/neoprojects/modeselector';
 import ProjectsView from '@/components/neoprojects/view';
 
-const Neo_ProjectsComponent = () => {
+const ProjectsComponent = () => {
   const [displayMode, setDisplayMode] = useState(EDisplayMode.CAROUSEL);
 
   return (
@@ -28,4 +28,4 @@ const Neo_ProjectsComponent = () => {
   );
 };
 
-export default Neo_ProjectsComponent;
+export default ProjectsComponent;
