@@ -15,7 +15,9 @@ const ProjectsGrid = (props: ProjectsGridProps) => {
   );
   const ref =
     useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
-  const { events } = useDraggable(ref);
+  const { events } = useDraggable(ref, {
+    applyRubberBandEffect: true,
+  });
 
   const handleProjectClick = (id: string) => {
     setSelectedProject(props.projects.find((project) => project.id === id));

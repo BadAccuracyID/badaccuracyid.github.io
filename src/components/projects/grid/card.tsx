@@ -27,15 +27,17 @@ const GridCard = (props: GridCardProps) => {
 
       <div className="z-10 flex flex-row items-center space-x-4 transition duration-300 group-hover/card:opacity-0">
         <div className="flex flex-col">
-          <p className="relative z-10 text-base font-normal text-gray-50">
+          <p className="relative z-10 select-none text-base font-normal text-gray-50">
             {props.project.company}
           </p>
-          <p className="text-sm text-gray-400">{props.project.year}</p>
+          <p className="select-none text-sm text-gray-400">
+            {props.project.year}
+          </p>
         </div>
       </div>
 
       <div
-        className="z-10 flex size-full md:hidden"
+        className="z-10 flex size-full select-none md:hidden"
         onClick={() => {
           // if on mobile, open the modal
           if (window.innerWidth < 600) {
@@ -44,7 +46,7 @@ const GridCard = (props: GridCardProps) => {
         }}
       ></div>
 
-      <div className="z-10 hidden flex-row items-center space-x-4 self-center opacity-0 transition duration-300 group-hover/card:opacity-100 md:group-hover/card:flex">
+      <div className="z-10 hidden select-none flex-row items-center space-x-4 self-center opacity-0 transition duration-300 group-hover/card:opacity-100 md:group-hover/card:flex">
         {props.project.github && (
           <button
             type="button"
@@ -78,7 +80,7 @@ const GridCard = (props: GridCardProps) => {
       </div>
 
       <div>
-        <h1 className="relative z-10 text-sm text-gray-50 transition duration-300 group-hover/card:opacity-0">
+        <h1 className="relative z-10 select-none text-sm text-gray-50 transition duration-300 group-hover/card:opacity-0">
           {props.project.tags.map((tag) => (
             <span
               key={tag}
@@ -88,10 +90,10 @@ const GridCard = (props: GridCardProps) => {
             </span>
           ))}
         </h1>
-        <h1 className="relative z-10 text-xl font-bold text-gray-50 md:text-2xl">
+        <h1 className="relative z-10 select-none text-xl font-bold text-gray-50 md:text-2xl">
           {props.project.title}
         </h1>
-        <p className="relative z-10 mt-4 line-clamp-2 text-sm font-normal text-gray-50 md:line-clamp-4">
+        <p className="relative z-10 mt-4 line-clamp-2 select-none text-sm font-normal text-gray-50 md:line-clamp-4">
           {props.project.shortDescription}
         </p>
       </div>
