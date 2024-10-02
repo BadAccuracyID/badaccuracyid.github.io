@@ -19,6 +19,10 @@ import less1Image from 'public/less/less1.png';
 import less2Image from 'public/less/less2.png';
 import less3Image from 'public/less/less3.png';
 import less4Image from 'public/less/less4.png';
+import neoacad1 from 'public/neoacad/neoacad1.png';
+import neoacad2 from 'public/neoacad/neoacad2.png';
+import neoacad3 from 'public/neoacad/neoacad3.png';
+import neoacad4 from 'public/neoacad/neoacad4.png';
 
 import type { IProject } from '@/components/projects/EDisplayMode';
 
@@ -95,6 +99,25 @@ const projects: IProject[] = [
     link: 'https://www.luckynetwork.net/en',
     github: '',
     tags: ['Java', 'gRPC', 'MySQL', 'Redis'],
+  },
+  {
+    id: 'neoacad',
+    title: 'Neo Academic Website',
+    shortDescription:
+      'Internal website for BINUS University’s SLC academic division. An improvement over the previous website, with more features and a better user experience.',
+    longDescription: [
+      'Frontend and backend development for the academic division of BINUS University’s SLC.',
+      'Frontend is built using React and TypeScript, while the backend is built using Laravel.',
+      'Redis and PostgreSQL are used for caching and database management, respectively.',
+      'The website is designed to be more user-friendly and efficient for the academic division.',
+      'Has more features than the previous website, including a more advanced TPA management system.',
+    ],
+    year: '2024',
+    company: 'BINUS University',
+    images: [neoacad1, neoacad2, neoacad3, neoacad4],
+    link: '',
+    github: '',
+    tags: ['React', 'TypeScript', 'REST', 'Laravel', 'Redis', 'PostgreSQL'],
   },
   {
     id: 'efio',
