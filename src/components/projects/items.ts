@@ -3,8 +3,10 @@ import efio1 from 'public/efio/2.png';
 import efio2 from 'public/efio/4.png';
 import efio3 from 'public/efio/5.png';
 import efio4 from 'public/efio/7.png';
-import dgenImage from 'public/lbw/diamond_gen.png';
-import lcControllerImage from 'public/lbw/lc_controller.png';
+import lbw1 from 'public/lbw/lbw1.png';
+import lbw2 from 'public/lbw/lbw2.png';
+import lbw3 from 'public/lbw/lbw3.png';
+import lbw4 from 'public/lbw/lbw4.png';
 import lcore1Image from 'public/lcorev5/lcore1.png';
 import lcore2Image from 'public/lcorev5/lcore2.png';
 import lcore3Image from 'public/lcorev5/lcore3.png';
@@ -32,7 +34,7 @@ const projects: IProject[] = [
     ],
     year: '2022',
     company: 'LuckyNetwork',
-    images: [dgenImage, lcControllerImage],
+    images: [lbw1, lbw2, lbw3, lbw4],
     link: 'https://www.luckynetwork.net/en',
     github: '',
     tags: ['Java', 'Redis', 'MySQL', 'JavaFX'],
