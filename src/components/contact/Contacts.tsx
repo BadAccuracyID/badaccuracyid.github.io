@@ -12,7 +12,7 @@ import {
   ContactCardGreen,
   ContactCardPurple,
   ContactCardRed,
-} from '@/components/contact/ContactCard';
+} from '@/components/contact/card';
 
 const ContactsComponent = () => {
   return (
