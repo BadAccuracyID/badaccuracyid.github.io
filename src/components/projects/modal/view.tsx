@@ -19,10 +19,10 @@ const ProjectModal = (props: ProjectModalProps) => {
       size={size}
       dismissible
     >
-      <Modal.Body className="w-full">
-        <div className="flex w-full flex-col gap-12 md:flex-row">
+      <Modal.Body className="scrollbar-hide w-full overflow-hidden">
+        <div className="flex w-full flex-col gap-8 md:flex-row">
           {/* Left */}
-          <div className="flex flex-col md:w-[200px]">
+          <div className="flex h-full w-2/12 flex-col">
             <span className="text-3xl font-bold md:text-2xl md:font-semibold">
               {props.project.title}
             </span>
@@ -73,7 +73,7 @@ const ProjectModal = (props: ProjectModalProps) => {
           </div>
 
           {/* Right */}
-          <div className="flex flex-col md:w-max">
+          <div className="scrollbar-hide flex w-10/12 flex-col">
             <span className="text-2xl font-semibold md:text-lg">
               Description
             </span>
