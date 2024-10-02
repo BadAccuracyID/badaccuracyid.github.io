@@ -18,6 +18,7 @@ import lcoreV74Image from 'public/lcorev7/lcorev7_4.png';
 import less1Image from 'public/less/less1.png';
 import less2Image from 'public/less/less2.png';
 import less3Image from 'public/less/less3.png';
+import less4Image from 'public/less/less4.png';
 
 import type { IProject } from '@/components/projects/EDisplayMode';
 
@@ -71,7 +72,7 @@ const projects: IProject[] = [
     ],
     year: '2023',
     company: 'LuckyNetwork',
-    images: [less1Image, less2Image, less3Image],
+    images: [less1Image, less2Image, less3Image, less4Image],
     link: 'https://github.com/Lucky-Development-Department/LuckyEssentialsJava/files/15270536/PRD.-.LuckyEssentialsJava.pdf',
     github:
       'https://github.com/Lucky-Development-Department/LuckyEssentialsJava',
