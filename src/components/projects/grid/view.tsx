@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import { useDraggable } from 'react-use-draggable-scroll';
 
 import GridCard from '@/components/projects/grid/card';
 import ProjectModal from '@/components/projects/modal/view';
@@ -12,6 +13,9 @@ const ProjectsGrid = (props: ProjectsGridProps) => {
   const [selectedProject, setSelectedProject] = useState<IProject | undefined>(
     undefined,
   );
+  const ref =
+    useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
+  const { events } = useDraggable(ref);
 
   const handleProjectClick = (id: string) => {
     setSelectedProject(props.projects.find((project) => project.id === id));
@@ -28,7 +32,11 @@ const ProjectsGrid = (props: ProjectsGridProps) => {
         isVisible={selectedProject !== undefined}
         onClose={handleCloseModal}
       />
-      <div className="scrollbar-hide grid auto-cols-max grid-flow-col grid-rows-2 gap-4 overflow-x-scroll">
+      <div
+        className="scrollbar-hide grid cursor-grab auto-cols-max grid-flow-col grid-rows-2 gap-4 overflow-x-scroll"
+        {...events}
+        ref={ref}
+      >
         {props.projects.map((project) => (
           <div key={project.title} className="size-full">
             <GridCard project={project} onCardClick={handleProjectClick} />
