@@ -1,8 +1,3 @@
-export enum EDisplayMode {
-  ALL,
-  CAROUSEL,
-}
-
 export interface IProject {
   id: string;
 

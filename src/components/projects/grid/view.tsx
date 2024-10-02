@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import type { IProject } from '@/components/projects/EDisplayMode';
 import GridCard from '@/components/projects/grid/card';
 import ProjectModal from '@/components/projects/modal/view';
+import type { IProject } from '@/components/projects/project-interface';
 
 interface ProjectsGridProps {
   projects: IProject[];

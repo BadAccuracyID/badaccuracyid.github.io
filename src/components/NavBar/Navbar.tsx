@@ -7,8 +7,8 @@ import type { INavBarItem } from '@/components/navbar/navbar-interface';
 
 const items: INavBarItem[] = [
   { title: 'About Me', offset: -50 },
-  { title: 'Experiences', offset: -50 },
-  { title: 'Projects', offset: 50 },
+  { title: 'Experiences', offset: 0 },
+  { title: 'Projects', offset: -20 },
   { title: 'Contacts', offset: -50 },
 ];
 

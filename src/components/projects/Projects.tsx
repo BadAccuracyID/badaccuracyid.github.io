@@ -1,13 +1,9 @@
-import { useState } from 'react';
 import { Element } from 'react-scroll';
 
-import { EDisplayMode } from '@/components/projects/EDisplayMode';
-import ModeSelector from '@/components/projects/modeselector';
-import ProjectsView from '@/components/projects/view';
+import ProjectsGrid from '@/components/projects/grid/view';
+import projects from '@/components/projects/items';
 
 const ProjectsComponent = () => {
-  const [displayMode, setDisplayMode] = useState(EDisplayMode.ALL);
-
   return (
     <Element
       id="projects"
@@ -18,8 +14,9 @@ const ProjectsComponent = () => {
         <div className="text-xl text-gray-600">fun projects() {'{'}</div>
       </div>
 
-      <ModeSelector mode={displayMode} setMode={setDisplayMode} />
-      <ProjectsView mode={displayMode} />
+      <div className="px-10">
+        <ProjectsGrid projects={projects} />
+      </div>
 
       <div className="pl-5">
         <div className="text-xl text-gray-600">{'}'}</div>

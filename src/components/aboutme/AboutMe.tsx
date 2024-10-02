@@ -37,7 +37,6 @@ const AboutMeComponent = () => {
           spy
           hashSpy
           duration={500}
-          offset={-50}
           className="left-pad-reverse flex cursor-pointer flex-row items-center bg-red-800 md:justify-end"
         >
           <span className="font-semibold text-gray-400 md:mr-4">

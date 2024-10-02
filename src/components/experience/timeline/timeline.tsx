@@ -76,7 +76,7 @@ const TimelineComponent = (props: TimelineProps) => {
               props.redirectNext !== undefined ? 'experienceContainer' : ''
             }
             horizontal={props.redirectNext !== undefined}
-            offset={props.redirectNext !== undefined ? 0 : 50}
+            offset={props.redirectNext !== undefined ? 0 : -20}
             title="Next"
             icon={props.redirectNext !== undefined ? FaArrowRight : FaCode}
             getTimelineTheme={getTimelineTheme}

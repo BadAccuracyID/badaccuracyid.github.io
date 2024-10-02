@@ -1,8 +1,8 @@
 import { Button, Modal } from 'flowbite-react';
 import { useState } from 'react';
 
-import type { IProject } from '@/components/projects/EDisplayMode';
 import ImageModal from '@/components/projects/modal/image';
+import type { IProject } from '@/components/projects/project-interface';
 
 interface ProjectModalProps {
   project?: IProject;

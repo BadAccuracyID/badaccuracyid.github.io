@@ -24,7 +24,7 @@ import neoacad2 from 'public/neoacad/neoacad2.png';
 import neoacad3 from 'public/neoacad/neoacad3.png';
 import neoacad4 from 'public/neoacad/neoacad4.png';
 
-import type { IProject } from '@/components/projects/EDisplayMode';
+import type { IProject } from '@/components/projects/project-interface';
 
 const projects: IProject[] = [
   {
