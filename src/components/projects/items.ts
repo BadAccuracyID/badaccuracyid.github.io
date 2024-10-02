@@ -54,7 +54,7 @@ const projects: IProject[] = [
     ],
     year: '2021',
     company: 'LuckyNetwork',
-    images: [lcore1Image, lcore2Image, lcore3Image, lcore4Image],
+    images: [lcore1Image, lcore2Image, lcore4Image, lcore3Image],
     link: 'https://www.luckynetwork.net/en',
     github: '',
     tags: ['Java', 'Redis', 'MySQL', 'MongoDB'],
