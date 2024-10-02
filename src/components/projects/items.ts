@@ -14,6 +14,7 @@ import lcore4Image from 'public/lcorev5/lcore4.png';
 import lcoreV71Image from 'public/lcorev7/lcorev7_1.png';
 import lcoreV72Image from 'public/lcorev7/lcorev7_2.png';
 import lcoreV73Image from 'public/lcorev7/lcorev7_3.png';
+import lcoreV74Image from 'public/lcorev7/lcorev7_4.png';
 import less1Image from 'public/less/less1.png';
 import less2Image from 'public/less/less2.png';
 import less3Image from 'public/less/less3.png';
@@ -78,7 +79,7 @@ const projects: IProject[] = [
   },
   {
     id: 'lcorev7',
-    title: 'LuckyCoreV7',
+    title: 'LuckyCoreV7 / Atreus',
     shortDescription:
       'Minecraft server core plugin that utilizes the micro-service architecture and gRPC to be as performant and scaleable as possible.',
     longDescription: [
@@ -89,10 +90,10 @@ const projects: IProject[] = [
     ],
     year: '2023',
     company: 'LuckyNetwork',
-    images: [lcoreV73Image, lcoreV71Image, lcoreV72Image],
+    images: [lcoreV73Image, lcoreV71Image, lcoreV72Image, lcoreV74Image],
     link: 'https://www.luckynetwork.net/en',
     github: '',
-    tags: ['Java', 'gRPC', 'MySQL'],
+    tags: ['Java', 'gRPC', 'MySQL', 'Redis'],
   },
   {
     id: 'efio',
