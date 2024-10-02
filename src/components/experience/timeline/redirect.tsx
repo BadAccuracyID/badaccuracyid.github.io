@@ -9,6 +9,7 @@ interface TimelineRedirectItemProps {
   to: string;
   toContainerId: string;
   horizontal: boolean;
+  offset?: number;
 
   title: string;
   icon: IconType;
@@ -24,7 +25,7 @@ const TimelineRedirectItem = (props: TimelineRedirectItemProps) => {
       to={props.to}
       containerId={props.toContainerId}
       horizontal={props.horizontal}
-      offset={-50}
+      offset={props.offset ?? 0}
       smooth
     >
       <Timeline.Item className="mb-8">

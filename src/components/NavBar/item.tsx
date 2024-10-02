@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 interface NavBarItemProps {
   title: string;
   isActive: boolean;
+  offset: number;
   setActive: (arg: string) => void;
 }
 
@@ -25,7 +26,7 @@ const NavBarItem = (props: NavBarItemProps) => {
       onClick={handleClick}
       onSetActive={handleSetActive}
       to={destination}
-      offset={-50}
+      offset={props.offset}
       duration={500}
       spy
       hashSpy

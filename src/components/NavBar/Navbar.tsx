@@ -3,8 +3,14 @@ import { useState } from 'react';
 import NavBarContainer from '@/components/navbar/container/container';
 import NavBarItem from '@/components/navbar/item';
 import NavBarLogo from '@/components/navbar/logo';
+import type { INavBarItem } from '@/components/navbar/navbar-interface';
 
-const items = ['About Me', 'Experiences', 'Projects', 'Contacts'];
+const items: INavBarItem[] = [
+  { title: 'About Me', offset: -50 },
+  { title: 'Experiences', offset: -50 },
+  { title: 'Projects', offset: 50 },
+  { title: 'Contacts', offset: -50 },
+];
 
 const NavBarComponent = () => {
   const [active, setActive] = useState<string>('');
@@ -18,9 +24,10 @@ const NavBarComponent = () => {
       <NavBarContainer.ItemList>
         {items.map((item) => (
           <NavBarItem
-            key={item}
-            title={item}
-            isActive={isActive(item)}
+            key={item.title}
+            title={item.title}
+            offset={item.offset}
+            isActive={isActive(item.title)}
             setActive={setActive}
           />
         ))}
